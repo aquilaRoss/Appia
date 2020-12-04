@@ -143,6 +143,8 @@ Error message and password prompt
 
 <li>$:/config/AutoSave</li>
 
+<li>$:/config/RelinkOnRename</li>
+
 <li>$:/core</li>
 
 <li>$:/DefaultTiddlers</li>
@@ -195,19 +197,29 @@ Error message and password prompt
 
 <li>Character Generation</li>
 
+<li>Clumsy</li>
+
 <li>Constitution</li>
+
+<li>Defensive Caster</li>
 
 <li>Disease Resistance</li>
 
-<li>Drakien</li>
+<li>Dragon Isles</li>
 
-<li>Drwarf</li>
+<li>Drakien</li>
 
 <li>Dune Lizard</li>
 
 <li>Dusk Elf</li>
 
+<li>Dwarf</li>
+
+<li>Enhanced Smell</li>
+
 <li>Faith</li>
+
+<li>Frenzy</li>
 
 <li>Frost Resistance</li>
 
@@ -219,9 +231,13 @@ Error message and password prompt
 
 <li>Great Night Vision</li>
 
+<li>Greater Night Vision</li>
+
 <li>Half Blood</li>
 
 <li>High Elf</li>
+
+<li>Huge</li>
 
 <li>Human</li>
 
@@ -236,6 +252,8 @@ Error message and password prompt
 <li>Kheldor</li>
 
 <li>Knight</li>
+
+<li>Leathery Skin</li>
 
 <li>Long Lived</li>
 
@@ -259,6 +277,8 @@ Error message and password prompt
 
 <li>Nordheim</li>
 
+<li>Offensive Caster</li>
+
 <li>Paladin</li>
 
 <li>Perception</li>
@@ -275,11 +295,15 @@ Error message and password prompt
 
 <li>Ranger</li>
 
+<li>Regen</li>
+
 <li>Rogue</li>
 
 <li>Runemaster</li>
 
 <li>Scout</li>
+
+<li>Slow</li>
 
 <li>Soldier</li>
 
@@ -288,6 +312,8 @@ Error message and password prompt
 <li>Strength</li>
 
 <li>Teenage Years</li>
+
+<li>Thick Skinned</li>
 
 <li>Thief</li>
 
@@ -319,6 +345,9 @@ Error message and password prompt
 <div id="storeArea" style="display:none;">
 <div created="20201204143839398" modified="20201204143839398" title="$:/config/AutoSave">
 <pre>no</pre>
+</div>
+<div created="20201204163724408" modified="20201204163724408" title="$:/config/RelinkOnRename">
+<pre>yes</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" name="Core" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.22">
 <pre>{
@@ -9730,7 +9759,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20201204162259618" list="[[Main Rules]]" modified="20201204162259618" title="$:/StoryList">
+<div created="20201204162428657" list="Race" modified="20201204164156232" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9791,8 +9820,8 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20201204162253787" modified="20201204162254258" title="$:/temp/search">
-<pre>test</pre>
+<div created="20201204162253787" modified="20201204162421146" title="$:/temp/search">
+<pre></pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.22">
 <pre>{
@@ -9964,73 +9993,62 @@ Starting Equipment: Sword, Axe or Hammer, Dagger, Crossbow, Chain &amp; Leather 
 [[Finishing Touches]]
 &quot;&quot;&quot;</pre>
 </div>
+<div created="20201204164159808" modified="20201204164159808" title="Clumsy">
+<pre></pre>
+</div>
 <div created="20201204143945582" modified="20201204144001526" tags="" title="Constitution">
 <pre>!!! Constitution
 This represents how tough you are, the ability to absorb damage and how much fatigue you can take. </pre>
 </div>
+<div created="20201204164017000" modified="20201204164017000" title="Defensive Caster">
+<pre></pre>
+</div>
 <div created="20201204160358748" modified="20201204160358748" title="Disease Resistance">
 <pre></pre>
 </div>
-<div created="20201204145028035" modified="20201204145033134" title="Drakien">
+<div created="20201204162821185" modified="20201204162821185" title="Dragon Isles">
+<pre></pre>
+</div>
+<div created="20201204145028035" modified="20201204162815433" title="Drakien">
 <pre>&quot;&quot;&quot;This race was made by a dragon known as Reliance they are considered one of the greatest races to stroll the world. Most of this race is often killed through battles and wars as the weariness of time does not seem to affect them. This race is taller and broader than humans, little is known about this race by the more common people, they are often in positions of power. The height ranges in this race from 6 feet 5 inches to 7ft 5inches.  Their ears are longer than elvish ears and their eyes are draconic and vary in colours of purple,red, green and yellow. In rare circumstance some Drakien have horns.
 
 Max Starting:
-Strength: 9
-Agility: 7
-Constitution: 8
-Intelligence: 7 
-Wisdom: 6
-Perception: 6
-Magic/Faith: 7
+[[Strength]]: 9
+[[Agility]]: 7
+[[Constitution]]: 8
+[[Intelligence]]: 7 
+[[Wisdom]]: 6
+[[Perception]]: 6
+[[Magic]]: 7
+[[Faith]]: 7
 
-Attribute Points: 0 (0)
+Attribute Points: 0
 Perk Points: 18
-Strength +3 (12), Constitution +2 (8), Agility +1 (4), Intelligence +1 (4), Magic/Faith +1 (4)
-Night Vision (4), Poison Resistance (2), Disease Resistance (1, Long Lived x5 (4)
-Base Movement: 5 (10)
-Country’s: Appia, Dragon Isles, Gallamor
+[[Strength]] +3, [[Constitution]] +2, [[Agility]] +1, [[Intelligence]] +1, [[Magic]] or [[Faith]] +1
+[[Night Vision]], [[Poison Resistance]], [[Disease Resistance]], [[Long Lived]] x5
+[[Movement]]: 5
+Country’s: [[Appia]], [[Dragon Isles]], [[Gallamor]]
 &quot;&quot;&quot;</pre>
 </div>
-<div created="20201204145133593" modified="20201204145142502" title="Drwarf">
-<pre>&quot;&quot;&quot;The race of dwarves are small stocky and the tallest dwarf is 5ft tall, they are incredibly intelligent and resilient, they are great enchanters but have no offensive and defensive magic. However they are very slow fighters. 
-They are incredibly rare sighting in Appia, they come from a nearby continent of Gallamor.
-
-Max Starting:
-Strength: 7
-Agility: 6
-Constitution: 10
-Intelligence: 8 
-Wisdom: 6
-Perception: 6
-Magic/Faith: 6
-
-Attribute Points: 1 (5)
-Perk Points: 23
-Intelligence +2 (8), Constitution +4 (16), Strength +1 (4)
-Greater Night Vision (9), Poison Resistance (2), Disease Resistance (1), Long Lived. (1)
-Flaw: Slow (-1 Initiative) (-5)
-Base Movement: 3 (6)
-Country’s: Appia (After 886BC), Ardon, Nordheim, Trakana, Gallamor, Souttran
-&quot;&quot;&quot;</pre>
-</div>
-<div created="20201204145046151" modified="20201204145049095" title="Dune Lizard">
+<div created="20201204145046151" modified="20201204162933560" title="Dune Lizard">
 <pre>&quot;&quot;&quot;This race is one of the oldest on all the continents, however this race of lizards is one of the last left. They have often been persecuted and made slaves by the other races. Lizards are similar in stature to humans often standing between 5ft 6Inches and 6ft tall. They are a hardy folk and there leathery skin gives them protection. 
 
 Max Starting:
-Strength: 6
-Agility: 6
-Constitution: 6
-Intelligence: 6 
-Wisdom: 6
-Perception: 6
-Magic/Faith: 6
+[[Strength]]: 6
+[[Agility]: 6
+[[Constitution]]: 6
+[[Intelligence]]: 6 
+[[Wisdom]]: 6
+[[Perception]]: 6
+[[Magic]]: 6
+[[Faith]]: 6
 
-Attribute Points: 4 (20)
+Attribute Points: 4
 Perk Points: 27
-Constitution +2 (8)
-Night Vision (4), Enhanced Smell (1, Leathery Skin +1 armour. (2) 
-Base Movement: 4 (8)
-Country’s: Gallamor, Trakana,
+[[Constitution]] +2
+[[Night Vision]], [[Enhanced Smell]], [[Leathery Skin]]
+[[Movement]]: 4
+Country’s: [[Gallamor]], [[Trakana]]
 &quot;&quot;&quot;</pre>
 </div>
 <div created="20201204144955222" modified="20201204160606005" title="Dusk Elf">
@@ -10054,9 +10072,37 @@ Perk Points: 15
 Country’s: [[Appia]], [[Trakana]], [[Souttran]]
 &quot;&quot;&quot;</pre>
 </div>
+<div created="20201204145133593" modified="20201204163725497" title="Dwarf">
+<pre>&quot;&quot;&quot;The race of dwarves are small stocky and the tallest dwarf is 5ft tall, they are incredibly intelligent and resilient, they are great enchanters but have no offensive and defensive magic. However they are very slow fighters. 
+They are incredibly rare sighting in Appia, they come from a nearby continent of Gallamor.
+
+Max Starting:
+[[Strength]]: 7
+[[Agility]]: 6
+[[Constitution]]: 10
+[[Intelligence]]: 8 
+[[Wisdom]]: 6
+[[Perception]]: 6
+[[Magic]]: 6
+[[Faith]]: 6
+
+Attribute Points: 1
+Perk Points: 23
+[[Intelligence]] +2, [[Constitution]] +4, [[Strength]] +1
+[[Greater Night Vision]], [[Poison Resistance]], [[Disease Resistance]], [[Long Lived]], [[Slow]]
+[[Movement]]: 3
+Country’s: [[Appia]] (After 886BC), [[Ardon]], [[Nordheim]], [[Trakana]], [[Gallamor]], [[Souttran]]
+&quot;&quot;&quot;</pre>
+</div>
+<div created="20201204162943280" modified="20201204162943280" title="Enhanced Smell">
+<pre></pre>
+</div>
 <div created="20201204144121222" modified="20201204144137070" tags="" title="Faith">
 <pre>!!! Faith
 This is your connection to your god, the more belief you have the more power is granted this is much like magic but it’s merely a sliver of your god’s power being wielded in your hands.</pre>
+</div>
+<div created="20201204163145232" modified="20201204163145232" title="Frenzy">
+<pre></pre>
 </div>
 <div created="20201204155842244" modified="20201204155842244" title="Frost Resistance">
 <pre></pre>
@@ -10064,30 +10110,33 @@ This is your connection to your god, the more belief you have the more power is 
 <div created="20201204160041741" modified="20201204160041741" title="Gallamor">
 <pre></pre>
 </div>
-<div created="20201204145214491" modified="20201204145220342" title="Giant">
+<div created="20201204145214491" modified="20201204164147313" title="Giant">
 <pre>&quot;&quot;&quot;This race of huge warriors has commonly been enslaved, they are huge and can often be 12ft tall. They are assumed to be dumb due to a first encounter incident long ago. However this is entirely wrong as they are just as intelligent as humans. They are an uncommon sight and sometimes can cause fear when first encountered due to their size.
 
 Max Starting:
-Strength: 11
-Agility: 3
-Constitution: 11
-Intelligence: 6
-Wisdom: 6
-Perception: 6
-Magic/Faith: 6
+[[Strength]]: 11
+[[Agility]]: 3
+[[Constitution]]: 11
+[[Intelligence]]: 6
+[[Wisdom]]: 6
+[[Perception]]: 6
+[[Magic]]: 6
+[[Faith]]: 6
 
 Perk Points: 15
-Constitution +5 (20), Strength +5 (20)
-Huge (They have reach 1, Fear, 1 additional wound box to wounded and major wounded, you can only ride giant mounts, and wield 2 handed weapons in 1 hand or 2 unless weapon is giant) (8
-Flaw: Clumsy (Min 9 mobility) (-5
-Base Movement: 7 (14)
-Country’s: Nordheim, Trakana
+[[Constitution]] +5, [[Strength]] +5
+[[Huge]], [[Clumsy]]
+[[Movement]]: 7
+Country’s: [[Nordheim]], [[Trakana]]
 &quot;&quot;&quot;</pre>
 </div>
 <div created="20201204160345164" modified="20201204160345164" title="Great Eye Sight">
 <pre></pre>
 </div>
 <div created="20201204160612836" modified="20201204160612836" title="Great Night Vision">
+<pre></pre>
+</div>
+<div created="20201204163749449" modified="20201204163749449" title="Greater Night Vision">
 <pre></pre>
 </div>
 <div created="20201204144821841" modified="20201204155700292" title="Half Blood">
@@ -10117,6 +10166,9 @@ Perk Points: 18
 [[Movement]]: 5
 Country’s: [[Appia]], [[Trakana]], [[Souttran]]
 &quot;&quot;&quot;</pre>
+</div>
+<div created="20201204164151672" modified="20201204164151672" title="Huge">
+<pre></pre>
 </div>
 <div created="20201204144840955" modified="20201204160330988" title="Human">
 <pre>&quot;&quot;&quot;This race is the most common found in the world of Appia. They are versatile and can easily mingle socially. This race is more common to mutate a variety of abilities. Their lifetime commonly ranges from 60-80 years.
@@ -10185,27 +10237,31 @@ Squire.
 Starting Equipment: Light Warhorse(400), and Fine Quality scale Mail(70), Heraldry, Sword, Axe, Hammer or Mace, Dagger, Long Spear or Lance, 2 Weeks Trail Rations, Good Clothes, Riding Boots, Blanket, Flint &amp; Steel, Water Canteen, 10D10 Silver.
 &quot;&quot;&quot;</pre>
 </div>
+<div created="20201204162947432" modified="20201204162947432" title="Leathery Skin">
+<pre></pre>
+</div>
 <div created="20201204160403028" modified="20201204160403028" title="Long Lived">
 <pre></pre>
 </div>
-<div created="20201204145101543" modified="20201204145105119" title="Lupus">
+<div created="20201204145101543" modified="20201204163139536" title="Lupus">
 <pre>&quot;&quot;&quot;This race has was seen long ago before the time of the Kingdom of Verdan. According to legend they attempted an unaided rebellion against Libius and according to history were wiped from existence, however they reappeared after the plague and where accepted into society by King Peter II. This race is taller and broader than humans, they have a wolf like heads and there body is just as hairy they stand on 2 legs much like humans and have 3 fingers and 1 thumb. The height ranges in this race from 6 foot to 7ft 5 inches. Their race can commonly live up to 300 years.
 
 Max Starting:
-Strength: 9
-Agility: 8
-Constitution: 8
-Intelligence: 6
-Wisdom: 6
-Perception: 6
-Magic/Faith: 6
+[[Strength]]: 9
+[[Agility]]: 8
+[[Constitution]]: 8
+[[Intelligence]]: 6
+[[Wisdom]]: 6
+[[Perception]]: 6
+[[Magic]]: 6
+[[Faith]]: 6
 
-Attribute Points: 0 (0)
+Attribute Points: 0
 Per Points: 20
-Constitution +2 (8), Strength +3 (12), Agility +2 (8)
-Night Vision (4), Frenzy (4), Poison Resistance (2), Regen Lv1 (4), Long Lived x3 (2
-Base Movement: 4 (8)
-Country’s: Appia, Ardon, Nordheim
+[[Constitution]] +2, [[Strength]] +3, [[Agility]] +2
+[[Night Vision]], [[Frenzy]], [[Poison Resistance]], [[Regen]], [[Long Lived]] x3
+[[Movement]]: 4
+Country’s: [[Appia]], [[Ardon]], [[Nordheim]]
 &quot;&quot;&quot;</pre>
 </div>
 <div created="20201204144104902" modified="20201204144119622" tags="" title="Magic">
@@ -10218,10 +10274,8 @@ Bonus Skill: +1 to any magic skill
 Starting Equipment: Quarterstaff, Robes, Shoes, flint &amp; steel, water canteen, backpack, tent, bedroll, water canteen, 2-week trail rations. 6d10 silver.
 &quot;&quot;&quot;</pre>
 </div>
-<div created="20201204143052423" modified="20201204162313898" tags="" title="Main Rules">
-<pre>[[Character Generation]]
-
-Test Edit</pre>
+<div created="20201204143052423" modified="20201204162426545" tags="" title="Main Rules">
+<pre>[[Character Generation]]</pre>
 </div>
 <div created="20201204153240329" modified="20201204153243869" title="Mercenary">
 <pre>&quot;&quot;&quot;Bonus Attribute: +1 Constitution
@@ -10250,6 +10304,9 @@ Starting Equipment: Heraldry, Rich Clothes, Riding horse, Fine boots, sword, dag
 &quot;&quot;&quot;</pre>
 </div>
 <div created="20201204155913084" modified="20201204155913084" title="Nordheim">
+<pre></pre>
+</div>
+<div created="20201204164013113" modified="20201204164013113" title="Offensive Caster">
 <pre></pre>
 </div>
 <div created="20201204153330887" modified="20201204153336581" title="Paladin">
@@ -10297,7 +10354,7 @@ Starting Equipment: Staff, Holy Robes, Shoes, flint &amp; steel, water canteen, 
 [[Watcher]]
 &quot;&quot;&quot;</pre>
 </div>
-<div created="20201204144543023" modified="20201204144803311" tags="" title="Race">
+<div created="20201204144543023" modified="20201204163742321" tags="" title="Race">
 <pre>&quot;&quot;&quot;
 [[Half Blood]]
 [[Human]]
@@ -10309,7 +10366,7 @@ Starting Equipment: Staff, Holy Robes, Shoes, flint &amp; steel, water canteen, 
 [[Dune Lizard]]
 [[Lupus]]
 [[Ursa]]
-[[Drwarf]]
+[[Dwarf]]
 [[Umli]]
 [[Giant]]
 &quot;&quot;&quot;</pre>
@@ -10320,6 +10377,9 @@ Bonus Skill: +1 Tracking, +1 Melee or Ranged Skill.
 Bonus Skill: Terrain Affinity.
 Starting Equipment: Sword, Axe or Hammer, Dagger, Longbow or Crossbow. Any Leather, 2 Weeks Trail Rations, Standard Clothes, Boots, Blanket, Flint &amp; Steel, Water Canteen, 6D10 Silver, basic first aid kit, flask of ale. Backpack, Cloak.
 &quot;&quot;&quot;</pre>
+</div>
+<div created="20201204163148904" modified="20201204163148904" title="Regen">
+<pre></pre>
 </div>
 <div created="20201204153506542" modified="20201204153510333" title="Rogue">
 <pre>&quot;&quot;&quot;Bonus Attribute: +1 Perception
@@ -10342,6 +10402,9 @@ Bonus Skill: +1 Stealth, +1 Tracking, +1 Awareness, +1 Heraldry.
 Bonus Perk: Proficiency - Leather Armour, Direction Sense.
 Starting Equipment: Dagger, 1-handed melee weapon of your choice, Bow or Crossbow, 2 Weeks Trail Rations, Standard Clothes, Boots, Blanket, Flint &amp; Steel, Water Canteen, 6D10 Silver, basic first aid kit, flask of ale. Backpack, Cloak.
 &quot;&quot;&quot;</pre>
+</div>
+<div created="20201204163753305" modified="20201204163753305" title="Slow">
+<pre></pre>
 </div>
 <div created="20201204153525391" modified="20201204153529837" title="Soldier">
 <pre>&quot;&quot;&quot;Bonus Attribute: +1 Strength
@@ -10370,6 +10433,9 @@ This attribute shows how strong you are.</pre>
 * Merchant Apprentice: +1 Appraising, +1 Bargain, +1 INTELLIGENCE or PERCEPTION
 </pre>
 </div>
+<div created="20201204163403801" modified="20201204163403801" title="Thick Skinned">
+<pre></pre>
+</div>
 <div created="20201204153435130" modified="20201204153454741" title="Thief">
 <pre>&quot;&quot;&quot;Bonus Attribute: +1 Dexterity
 Bonus Skill: +1 Pickpocket, Stealth, Concealment, +1 Picklocks, +1 streetwise, +1 appraising
@@ -10380,46 +10446,47 @@ Starting Equipment: 2 Daggers, 2 Weeks Trail Rations, Standard Clothes, Boots, B
 <div created="20201204160037493" modified="20201204160037493" title="Trakana">
 <pre></pre>
 </div>
-<div created="20201204145156457" modified="20201204145202590" title="Umli">
+<div created="20201204145156457" modified="20201204164008384" title="Umli">
 <pre>&quot;&quot;&quot;This race of forgotten dwarves are small stocky and the tallest dwarf is 5ft tall, they are incredibly intelligent and resilient, this forgotten race of ancient dwarves are the highly skilled and magically attuned of their race which has all but disappeared in common dwarves. This race has never been seen outside of Nordheim, and unlike their cousins they are far less stocky.
 
 Max Starting:
-Strength: 7
-Agility: 6
-Constitution: 8
-Intelligence: 8 
-Wisdom: 6
-Perception: 6
-Magic/Faith: 7
+[[Strength]]: 7
+[[Agility]]: 6
+[[Constitution]]: 8
+[[Intelligence]]: 8 
+[[Wisdom]]: 6
+[[Perception]]: 6
+[[Magic]]: 7
+[[Faith]]: 6
 
-Attribute Points: 1 (5)
+Attribute Points: 1
 Perk Points: 11
-Intelligence +2 (8), Constitution +2 (16), Strength +1 (4), Magic (4)
-Greater Night Vision (9), Poison Resistance (2), Disease Resistance (1), Long Lived. (1)
-Pick: Runemaster, Offensive Caster or Defensive Caster Perk
-Flaw: Slow (-1 Initiative) (-5)
-Base Movement: 3 (6)
-Country’s: Nordheim
+[[Intelligence]] +2, [[Constitution]] +2, [[Strength]] +1, [[Magic]]
+[[Greater Night Vision]], [[Poison Resistance]], [[Disease Resistance]], [[Long Lived]], [[Slow]]
+One Of: [[Runemaster]], [[Offensive Caster]] or [[Defensive Caster]]
+[[Movement]]: 3
+Country’s: [[Nordheim]]
 &quot;&quot;&quot;</pre>
 </div>
-<div created="20201204145117119" modified="20201204145120310" title="Ursa">
+<div created="20201204145117119" modified="20201204163509064" title="Ursa">
 <pre>&quot;&quot;&quot;This race has was seen long ago before the time of the Kingdom of Verdan. According to legend they were seen in the frozen north. This race is taller and broader than humans, they have a bear like heads and there body is just as hairy they stand on 2 legs much like humans and have 3 fingers and 1 thumb. The height ranges in this race from 6 foot to 7ft 5 inches. Their race can commonly live up to 300 years.
 
 Max Starting:
-Strength: 8
-Agility: 6
-Constitution: 9
-Intelligence: 6
-Wisdom: 8
-Perception: 6
-Magic/Faith: 6
+[[Strength]]: 8
+[[Agility]]: 6
+[[Constitution]]: 9
+[[Intelligence]]: 6
+[[Wisdom]]: 8
+[[Perception]]: 6
+[[Magic]]: 6
+[[Faith]]: 6
 
-Attribute Points: 0 (0)
+Attribute Points: 0
 Per Points: 15
-Constitution +3 (12), Strength +2 (8), Wisdom +2 (8)
-Night Vision (4), Thick Skinned (+2 armour vs mundane (8) Poison Resistance Lv2 (5), Long Lived x3 (2)
-Base Movement: 5 (10)
-Country’s: Nordheim
+[[Constitution]] +3, [[Strength]] +2, [[Wisdom]] +2
+[[Night Vision]], [[Thick Skinned]] x2, [[Poison Resistance]] x2, [[Long Lived]] x3
+[[Movement]]: 5
+Country’s: [[Nordheim]]
 &quot;&quot;&quot;</pre>
 </div>
 <div created="20201204153615759" modified="20201204153619917" title="Watcher">
