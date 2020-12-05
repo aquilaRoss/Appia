@@ -195,6 +195,8 @@ Error message and password prompt
 
 <li>Agility</li>
 
+<li>Alarm Ward</li>
+
 <li>Appia</li>
 
 <li>Appraisal</li>
@@ -213,15 +215,21 @@ Error message and password prompt
 
 <li>Attributes</li>
 
+<li>Aura of Regeneration</li>
+
 <li>Awareness</li>
 
 <li>Bandit</li>
 
 <li>Bargain</li>
 
+<li>Barrier</li>
+
 <li>Blacksmith</li>
 
 <li>Blinding Light</li>
+
+<li>Blink</li>
 
 <li>Blizzard</li>
 
@@ -233,6 +241,8 @@ Error message and password prompt
 
 <li>Brawling</li>
 
+<li>Camouflage</li>
+
 <li>Caravan Guard</li>
 
 <li>Chain Lightning</li>
@@ -240,6 +250,8 @@ Error message and password prompt
 <li>Character Generation</li>
 
 <li>Church</li>
+
+<li>Cleanse</li>
 
 <li>Clumsy</li>
 
@@ -253,9 +265,13 @@ Error message and password prompt
 
 <li>Constitution</li>
 
+<li>Counter Spell</li>
+
 <li>Craftsmen</li>
 
 <li>Craftsmen Apprentice</li>
+
+<li>Dark Vision</li>
 
 <li>Defensive Caster</li>
 
@@ -266,6 +282,8 @@ Error message and password prompt
 <li>Direction Sense</li>
 
 <li>Disease Resistance</li>
+
+<li>Dispel</li>
 
 <li>Dragon Isles</li>
 
@@ -278,6 +296,8 @@ Error message and password prompt
 <li>Dusk Elf</li>
 
 <li>Dwarf</li>
+
+<li>Earth Armour</li>
 
 <li>Earthquake</li>
 
@@ -307,6 +327,8 @@ Error message and password prompt
 
 <li>Flaws</li>
 
+<li>Foresight</li>
+
 <li>Frenzy</li>
 
 <li>Frost Resistance</li>
@@ -326,6 +348,12 @@ Error message and password prompt
 <li>Great Vision</li>
 
 <li>Half Blood</li>
+
+<li>Haste</li>
+
+<li>Heal</li>
+
+<li>Healing Trance</li>
 
 <li>Heraldry</li>
 
@@ -379,7 +407,13 @@ Error message and password prompt
 
 <li>Main Rules</li>
 
+<li>Mana Armour</li>
+
 <li>Mana Bolt</li>
+
+<li>Mana Shield</li>
+
+<li>Mana Sight</li>
 
 <li>Melee Axes</li>
 
@@ -390,6 +424,8 @@ Error message and password prompt
 <li>Melee Polearm</li>
 
 <li>Melee Shield</li>
+
+<li>Mend</li>
 
 <li>Mercenary</li>
 
@@ -408,6 +444,10 @@ Error message and password prompt
 <li>Missile Exotic</li>
 
 <li>Missile Thrown</li>
+
+<li>Mist</li>
+
+<li>Momentum</li>
 
 <li>Movement</li>
 
@@ -439,9 +479,13 @@ Error message and password prompt
 
 <li>Power Points</li>
 
+<li>Preservation</li>
+
 <li>Priest</li>
 
 <li>Profession</li>
+
+<li>Protection</li>
 
 <li>Race</li>
 
@@ -449,7 +493,13 @@ Error message and password prompt
 
 <li>Regen</li>
 
+<li>Regeneration</li>
+
 <li>Religion</li>
+
+<li>Resist Pain</li>
+
+<li>Restoration</li>
 
 <li>Riding</li>
 
@@ -468,6 +518,8 @@ Error message and password prompt
 <li>Runner</li>
 
 <li>Running</li>
+
+<li>Salvation</li>
 
 <li>Schemer</li>
 
@@ -505,7 +557,13 @@ Error message and password prompt
 
 <li>Student</li>
 
+<li>Stun Bolt</li>
+
+<li>Stun Shield</li>
+
 <li>Survival</li>
+
+<li>Sustain</li>
 
 <li>Tactics</li>
 
@@ -517,15 +575,21 @@ Error message and password prompt
 
 <li>Telekinesis</li>
 
+<li>Telekinetic Barrier</li>
+
 <li>Telekinetic Push</li>
 
 <li>Telepathic Illusion</li>
+
+<li>Telepathic Message</li>
 
 <li>Terrain Affinity</li>
 
 <li>Thick Skinned</li>
 
 <li>Thief</li>
+
+<li>Tornado</li>
 
 <li>Tracking</li>
 
@@ -535,6 +599,8 @@ Error message and password prompt
 
 <li>Ursa</li>
 
+<li>Wall of Vine</li>
+
 <li>Watcher</li>
 
 <li>Weapon Smith</li>
@@ -542,6 +608,10 @@ Error message and password prompt
 <li>Willpower</li>
 
 <li>Wind Rush</li>
+
+<li>Wind Shield</li>
+
+<li>Wind Wall</li>
 
 <li>Wisdom</li>
 
@@ -10173,6 +10243,25 @@ Error message and password prompt
 <pre>!!! Agility
 This represents your speed, your ability to hit a target and how dextrous you are.</pre>
 </div>
+<div created="20201205165034314" modified="20201205165052810" tags="DefensiveSpell Spell" title="Alarm Ward">
+<pre>&quot;&quot;&quot;
+Used by wizards and priests who travel or go on pilgrimages by themselves it was designed so that they may sleep in relative comfort knowing they may have some warning before being robbed or worse.
+Cost: 2
+Action: Full
+Target: Area LOS
+Upkeep: No
+Difficulty: 7
+AOE: 60/120/180/240 feet (0, +2,+4,+6)
+Detects: All/small/medium (0, +1, +2)
+Description: 
+Effect: Each Success gives 1 hour of the ward. If someone's enters the perimeter the alarm will be triggered instantly awakening the caster. This spell is easier if you want to detect anything but harder if you wish to block out the smaller wildlife traffic. 
+
+Level up:
+AOE shift right (up to 3 times): 2
+Alerts to exact direction: 2
+-1 Difficulty (up to 2 times): 2
+&quot;&quot;&quot;</pre>
+</div>
 <div created="20201204160026254" modified="20201204172132598" tags="Place" title="Appia">
 <pre></pre>
 </div>
@@ -10227,6 +10316,31 @@ Allows you to use medium armour with -2TN mobility. 2nd rank provides a total of
 {{Faith}}
 {{Power Points}}</pre>
 </div>
+<div created="20201205164059643" modified="20201205164137873" tags="DefensiveSpell Spell" title="Aura of Regeneration">
+<pre>&quot;&quot;&quot;
+The caster illuminates an area around himself in a pale green light. Friendly targets wounds begin to continually heal while inside the Aura. Leaves permanent scar
+Cost: 10 
+Pre-Requisite: [[Heal]], [[Regeneration]], [[Restoration]]
+Time: Full Action 
+Range: Self Aura 
+Difficulty: 9 
+Upkeep: Yes 
+Radius: Magic Feet x1/x2/x3 (0,+1,+2)
+Diminish: -1/0 (0, +2)
+Effect: Each success is one regeneration die and becomes a Regeneration Pool, if anyone is in the AOE and Minor injured or more the caster must allocate 1D to attempt to heal them, the caster can give more from the regeneration pool before the roll is made. Max of 1 health lev per target. Once a dice is allocated it cannot be used again that round. The ‘Regeneration Pool’ replenishes at its original strength -1 every round until the pool reaches zero this is for the ‘Diminish’ effect.
+Limit: This spell may not heal more than 2 health levels per target per turn. 
+
+Regen TN: Minor Wound = 6 Wounded = 7 M.Wounded = 8 Debilitated = 9 Expiring = 10 
+
+Level Upgrade: 
+Lower difficulty by 1 (1 time) = 5 
+1 A/S on Casting Roll = 10 
+Radius Shift Right (2 Times) = 5
+Diminish Shift Right (1 time) = 10
+Break the Limit:  May Heal two wound boxes per turn 
+Max the Spell: Anyone in AOE may immediately roll 1 regen die at TN6 no matter what the wound level.
+&quot;&quot;&quot;</pre>
+</div>
 <div created="20201205152417284" modified="20201205152417284" tags="Skill" title="Awareness">
 <pre></pre>
 </div>
@@ -10237,6 +10351,27 @@ Allows you to use medium armour with -2TN mobility. 2nd rank provides a total of
 <pre>[[Wisdom]]
 [[Perception]]
 </pre>
+</div>
+<div created="20201205164245602" modified="20201205164304506" tags="DefensiveSpell Spell" title="Barrier">
+<pre>&quot;&quot;&quot;
+A barrier across a small distance with own health pool, must be connected between two objects and is the height of these objects and glows a luminous colour. 
+Cost: 5
+Time: 2 Action
+Difficulty: 8
+Duration: Concentration
+Range: Magic Stat x3/x4/x5/x6 (0, +1, +2, +3)
+AOE Length: 5/10/15/20/30 (0, +1, +2, +3, +4)
+Barrier Resistance: +2/ +4/+6/+8 A/S armour (0, +2, +4, +6TN) 
+Power: 1 Point per cast however grants 1 A/S
+Effect: Anyone attempting to move through barrier must beat the caster magic/faith stat plus successes in successes or immediately stop. The caster must remain within LOS. This barrier takes damage if shot at or cast at. The barrier has health equal to the casters magic/faith and successes. When resisting any damage the barrier rolls the casters Magic +  Spells Armour at TN7 to resist. 
+
+Level Up:
+Casting 1 turn reduction = 5
+-1 Difficulty (can be taken two times) = 5
+Range shift right (can be taken 3 times) = 5
+AOE Length shift right (4 times) = 5
+Barrier Resistance (3 times) = 10
+&quot;&quot;&quot;</pre>
 </div>
 <div created="20201205145334723" modified="20201205152709917" tags="Skill CraftSkill" title="Blacksmith">
 <pre>[[Strength]]
@@ -10261,6 +10396,25 @@ Level Up:
 AOE shift right (up to 4 times) = 5 per
 Damaging Light means that your spell is unsoakable = 10
 Duration shift right (up to 3 times) = 10 per
+&quot;&quot;&quot;</pre>
+</div>
+<div created="20201205164511858" modified="20201205164535818" tags="DefensiveSpell Spell" title="Blink">
+<pre>&quot;&quot;&quot;
+Pre-requisite: [[Magic]] 7+
+Cost: 5
+Time: 1 Action
+Difficulty: 7
+Duration: Instant
+Range: Self/LOS
+Limit: Magic ½ rounded up uses per day. Can be used after this but every 1 on the die roll cancels 2 success. Failure to get any successes result in magic of caster in ‘unsoakable’ damage. 
+
+Effect: Can be used in replacement of dodge and can be cast as a reactionary spell. Each success over attackers roll can move the character anywhere in his LOS in squares (5Feet). However this increases any further normal dodges by the standard TN. When used out of combat it can cast to give 5 feet worth of movement per success, the character instantaneously moves after a puff of smoke. 
+
+Level Up:
+Limit Magic per day = 10
+-1 Difficulty = 5
+Can be used in conjunction with foresight in combat but only up to the attacker’s successes: 5 
+E. G. 3 successes on attack means 3 foresight only can be used. 
 &quot;&quot;&quot;</pre>
 </div>
 <div created="20201205162330689" modified="20201205162349313" tags="OffensiveSpell Spell" title="Blizzard">
@@ -10316,6 +10470,21 @@ Max Level: 1
 <div created="20201205152418980" modified="20201205152418980" tags="Skill" title="Brawling">
 <pre></pre>
 </div>
+<div created="20201205165010643" modified="20201205165029490" tags="DefensiveSpell Spell" title="Camouflage">
+<pre>&quot;&quot;&quot;
+Reduces the visibility of the target allowing them to simply fade into the background. However whilst this fades the target from sight it does not stop noise or smell
+Cost: 5
+Action: Full
+Target: LOS
+Upkeep: Yes per target. 
+TN: 8 in darkness, 10 in light
+Effect: Each success increases the targets sneak/hide roll by that number of dice.
+Level Up: 
+-1 Difficulty = 5
++1 A/S to targets sneak/hide roll = 10
+Upkeep to Magic stat in rounds = 5 
+&quot;&quot;&quot;</pre>
+</div>
 <div created="20201204152217985" modified="20201205150106745" tags="Profession" title="Caravan Guard">
 <pre>&quot;&quot;&quot;
 [[Strength]] +1
@@ -10366,6 +10535,21 @@ TN6 Unsoakable Damage = 10
 <div created="20201204173147253" modified="20201204173153645" tags="Upbringing" title="Church">
 <pre>[[Faith]] +1</pre>
 </div>
+<div created="20201205164601547" modified="20201205164616498" tags="DefensiveSpell Spell" title="Cleanse">
+<pre>&quot;&quot;&quot;
+This is used on non-magical poisons or plagues but may have some effect on magical poisons plagues and will allow the caster the chance to dispel the magic if they have the appropriate spell. It also makes food and water safe to eat.
+Cost: 5
+Time: 2 Full Actions
+Range: Touch 
+Difficulty: Varies on Poisons
+Effect: Each success will reduce the effect of the plague or poison at GM’s disclosure and a single success stops a poison from proceeding to cause further damage.
+
+Level Up: 
+-1 Difficulty (up to 2 times): 5 per
+Range Magic in feet x 2= 5
+1 A/S = 10
+&quot;&quot;&quot;</pre>
+</div>
 <div created="20201205141535177" modified="20201205141603696" tags="Flaw" title="Clumsy">
 <pre>&quot;&quot;&quot;
 Bonus: 5
@@ -10411,6 +10595,21 @@ One of [[Melee Axes]], [[Melee Blunt]], [[Melee Blades]], [[Melee Polearm]], [[M
 <pre>!!! Constitution
 This represents how tough you are, the ability to absorb damage and how much fatigue you can take. </pre>
 </div>
+<div created="20201205164154491" modified="20201205164215530" tags="DefensiveSpell Spell" title="Counter Spell">
+<pre>&quot;&quot;&quot;
+The caster deflects or stops the spell by depleting the mana much like dispel, but this is much quicker.
+Pre-Requisite: [[Dispel]]
+Cost: 10
+Time: 1 Full reactive action, this means if an enemy is on a higher initiative and you are on a lower initiative you may still attempt to dispel their magic but you lose your next full turn. This may never spill over the next round which can mean that quicker casters can achieve an extra attack which can’t be blocked.
+Range: LOS
+Effect: You may attempt to stop offensive magic with this roll, your target number is the difficulty of the enemies spell and if you achieve an equal number of successes you have absorbed the spell. If you have achieved successes but not negated all the opponents successes then you have achieved a mana drain meaning that their spell still works but not as well as it should, for every 2 successes you achieve you remove 1 of theirs rounded down. E.g. Ross fireball achieves 6 successes to hit, a defensive caster attempts to dispel but only achieves 3 successes, for every two successes he takes 1 off Ross meaning that Ross’s fireball hits with 5 successes instead of 6 and can still be dodged.
+
+Level up: Must be bought in descending order.	
+1 Half Action: 10
+2 Half Actions: 15
+1 Free Action: 20
+&quot;&quot;&quot;</pre>
+</div>
 <div created="20201204173206646" modified="20201204173212405" tags="Upbringing" title="Craftsmen">
 <pre>[[Wisdom]] +1</pre>
 </div>
@@ -10418,6 +10617,23 @@ This represents how tough you are, the ability to absorb damage and how much fat
 <pre>&quot;&quot;&quot;
 Either a [[Bowyer]], [[Blacksmith]] or [[Armour Smith]] or [[Weapon Smith]] +2.
 [[Strength]] or [[Intelligence]] +1
+&quot;&quot;&quot;</pre>
+</div>
+<div created="20201205165054971" modified="20201205165121770" tags="DefensiveSpell Spell" title="Dark Vision">
+<pre>&quot;&quot;&quot;
+The eyes of the target glow an unnatural blue if magic or yellow if faith and the target is able to see through Darkness and magical means as if it were day.
+Cost: 5 
+Action: full
+Target: LOS
+Upkeep: Yes
+Difficulty:
+6 Natural Darkness
+7 Magical Darkness
+8 Mist
+Each Success grants 10ft of perfect vision.
+
+Level up: 
+-2 difficulty = 5 per
 &quot;&quot;&quot;</pre>
 </div>
 <div created="20201205142642115" modified="20201205142924849" tags="Perk" title="Defensive Caster">
@@ -10447,6 +10663,16 @@ You always know where you are and can navigate without a map.
 Cost: 2
 Max Level: 1
 Disease Resistance rolls gain +1AS
+&quot;&quot;&quot;</pre>
+</div>
+<div created="20201205164221563" modified="20201205164236233" tags="DefensiveSpell Spell" title="Dispel">
+<pre>&quot;&quot;&quot;
+The caster may dispel an upkeep spell or spell that wasn’t cast this round by taking the mana surrounding the caster thereby stopping their spell.
+Cost: 5
+Time: Full Action	
+Range: LOS
+Difficulty: The original difficulty and cost of target spell.
+Effect: Immediately stops the spell if same number of successes are achieved.
 &quot;&quot;&quot;</pre>
 </div>
 <div created="20201204162821185" modified="20201204172150846" tags="Place" title="Dragon Isles">
@@ -10538,6 +10764,23 @@ Perk Points: 23
 [[Great Night Vision]], [[Poison Resistance]], [[Disease Resistance]], [[Long Lived]], [[Slow (Flaw)]]
 [[Movement]]: 3
 Country’s: [[Appia]] (After 886BC), [[Ardon]], [[Nordheim]], [[Trakana]], [[Gallamor]], [[Souttran]]
+&quot;&quot;&quot;</pre>
+</div>
+<div created="20201205164434258" modified="20201205164508098" tags="DefensiveSpell Spell" title="Earth Armour">
+<pre>&quot;&quot;&quot;
+The caster or target becomes engulfed in the earth around it, slowing them but making them harder to kill.
+Cost: 5
+Difficulty: 7
+Range: LOS
+Upkeep: Yes
+Effect: Your successes are used to increase armour resistance, each success can
+Add 1 armour to chosen resistance rolls up to a maximum of the casters magic in each resistance , every 3 armour given adds 1A/S. Every time 3 successes are distributed the Target drops there movement by 1.
+E.g. Ross achieves 4 successes, he put 2 dice into piercing and slashing for the armour bonus of +2D to each of those resistances. This however means he has -1 movement.
+
+Level up:
+-1 Movement Penalty Reduction (up to 2 times) = 10
++1 A/S (up to 2 times) = 5
+Multiple Targets Can distribute successes to other targets in LOS = 10
 &quot;&quot;&quot;</pre>
 </div>
 <div created="20201205162523457" modified="20201205162550568" tags="OffensiveSpell Spell" title="Earthquake">
@@ -10726,6 +10969,24 @@ Bonus when Maxed: If target hit and has anything flammable they are on fire.
 <div created="20201205143149226" modified="20201205160703399" title="Flaws">
 <pre>&lt;&lt;list-links &quot;[tag[Flaw]]+[sort[]]&quot;&gt;&gt;</pre>
 </div>
+<div created="20201205163805586" modified="20201205163833297" tags="Spell DefensiveSpell" title="Foresight">
+<pre>&quot;&quot;&quot;
+This spell gives the user a glimpse in the minor future that allows him to foresee an attack that would hit him, this does not work offensively.
+Cost: 5
+Time: Full Action
+Difficulty: 8 
+Duration: Casters Magical Attribute in turns. 
+
+Range: Touch
+Continuation: 1/2/3/4 (0, +2, +4, +6TN)
+Effect: Each success gives the user that many successes to use defensively on the continuation number of parry or dodges only. E.g. Paul casts foresight with continuation of 2 on Ross and achieved 4 successes, Ross has missed a parry by 3 successes, he may use the 3 dice from foresight to not be hit, he then has 1 success left over that can be kept for 1 more roll.
+
+Level Upgrade: 
+Range increase to LOS = 5
+-1 Difficulty (up to 2 times) = 5 per 
++1 to continuation (maximum of 4) = 10 per
+&quot;&quot;&quot;</pre>
+</div>
 <div created="20201205142345586" modified="20201205142458665" tags="Flaw" title="Frenzy">
 <pre>&quot;&quot;&quot;
 Bonus: 0
@@ -10799,6 +11060,55 @@ Double Human eye sight. -1 Sight based perception during day.&quot;&quot;&quot;<
 At the GM Discretion, up to half of the perks and attribute bonuses can be converted into additional Perk Points. Roll separately for each +1 on an attribute and each perk listed on a 50/50 roll. If you roll high you keep the stat or perk and if you roll low it is converted into Perk Points.
 
 These half-bloods are often very common in the Appian society but frowned upon by the certain nobles.
+&quot;&quot;&quot;</pre>
+</div>
+<div created="20201205164541547" modified="20201205164555802" tags="DefensiveSpell Spell" title="Haste">
+<pre>&quot;&quot;&quot;
+The casters target lights blue or yellow (divine) and the target is filled with magic power thereby increasing their reaction speed. Many are not sure on the exact science of how this works but this ancient spell is very popular.
+Cost: 10
+Action: Full
+Difficulty: 8
+Effect: +1 Initiative die per success.
+Effect Boost: You can increase a targets initiative up to a maximum of your Magical attribute.
+Upkeep: Yes
+Range: 
+Contact	0TN 
+Magic Stat ½ Metres	+1TN
+Magic Stat in Metres	+2TN
+	
+Level up: 
+-1 Difficulty (up to 1 time) = 5
+Range shift down (up to 2 times) = 5
++1A/S (up to one time) = 10
+&quot;&quot;&quot;</pre>
+</div>
+<div created="20201205163845161" modified="20201205163905969" tags="DefensiveSpell Spell" title="Heal">
+<pre>&quot;&quot;&quot;
+The user summons his power to heal the targets very body, his hands glow with a golden light if divine or blue light if not.
+Cost: 5
+Time: 10 Minutes
+Range: Touch
+Difficulty: 8
+Effect: Each Success heals 1 wound box. Each attempt of immediate healing on same character per day adds +4TN, this is cumulative. Cannot be used to heal dead. 
+
+Level Upgrade: 
+-1 Difficulty TN (up to 2 times) = 5 per
+1 A/S = 10
+Focus (May wait 1 hour to cast a 2nd time on same target at +2TN) = 5
+&quot;&quot;&quot;</pre>
+</div>
+<div created="20201205163913746" modified="20201205163930641" tags="DefensiveSpell Spell" title="Healing Trance">
+<pre>&quot;&quot;&quot;
+Cost: 5
+Time: Full Action
+Upkeep: Yes
+Range: Self
+Difficulty: 10
+Effect: Immediately deduct 1 faith point. Each Success reduces all following healing spells TN by 1. 1 success is automatically generated by the use of the faith point. 
+Description: This powerful spell is reserved for great healers and was often used in the great wars to heal others on the front line. However it often required stoic defenders as priests were less mobile.
+
+Level Upgrade: 
+-1 Difficulty (up to 2) = 5 per
 &quot;&quot;&quot;</pre>
 </div>
 <div created="20201205154518198" modified="20201205154518198" tags="Skill" title="Heraldry">
@@ -11084,6 +11394,23 @@ Starting Equipment: Quarterstaff, Robes, Shoes, flint &amp; steel, water canteen
 <div created="20201204143052423" modified="20201204162426545" tags="" title="Main Rules">
 <pre>[[Character Generation]]</pre>
 </div>
+<div created="20201205164646659" modified="20201205164707227" tags="DefensiveSpell Spell" title="Mana Armour">
+<pre>&quot;&quot;&quot;
+The caster surrounds himself in a shield that is a fraction above his skin that protects from magical damage.
+Cost: 5
+Pre-Requisite: [[Mana Shield]]
+Time: Full Action
+Range: Self/LOS Target (0, +2TN)
+Difficulty: 10
+Upkeep: Yes 
+Effect: Each success increases your magical resistance roll for the duration that the armour is up. You can only give up to ½ your Magic/Faith stat rounded down.
+
+Level Up:
+-1 Difficulty (up to 2 times) = 5
+Range LOS target = 5.
+Full Magic as Cap = 5
+&quot;&quot;&quot;</pre>
+</div>
 <div created="20201205162850410" modified="20201205162909528" tags="OffensiveSpell Spell" title="Mana Bolt">
 <pre>&quot;&quot;&quot;
 This particular bolt is made up of the essence of magic and on contact with a mage can affect their ability to cast magic. 
@@ -11102,6 +11429,38 @@ Magic Damage Shift Right (up to 3 times) = 5 per
 Drain Duration Shift right (up to 3 times) = 5 per
 &quot;&quot;&quot;</pre>
 </div>
+<div created="20201205164625707" modified="20201205164640786" tags="DefensiveSpell Spell" title="Mana Shield">
+<pre>&quot;&quot;&quot;
+The caster gathers a shield of blue or yellow (Divine) around himself or others to protect against enemy casters.
+Cost: 5
+Time: Full Action
+Range: LOS
+Difficulty: 7
+Upkeep: Yes 
+AOE Circle: 0/5/10/15/20/25/30 (0,+1,+2,+3,+4,+5,+6)
+Effect: Each success reduces any incoming magic attack by 1 success for 1 spell.
+
+Level Up:
+-1 Difficulty = 5
+AOE shift right (up to 6 times) = 5
+1 A/S = 10
+&quot;&quot;&quot;</pre>
+</div>
+<div created="20201205164713179" modified="20201205164728002" tags="DefensiveSpell Spell" title="Mana Sight">
+<pre>&quot;&quot;&quot;
+The caster can see magical items and in some cases can see who has cast the spell by following the mana lines, it can be used to pick up hidden runes.
+Cost: 5
+Time: Full Action
+Range: Self (LOS)
+Difficulty: 8 for magical items,12 for runes, 15 for mana lines.
+Effect: Each success gives you the sight.
+Duration: 1 turn per success
+
+Level up:
+Duration 2 turns = 5
+-1 Difficulty (up to 2 times) = 2 per
+&quot;&quot;&quot;</pre>
+</div>
 <div created="20201205145137747" modified="20201205152623509" tags="Skill MeleeSkill" title="Melee Axes">
 <pre>[[Agility]]</pre>
 </div>
@@ -11116,6 +11475,21 @@ Drain Duration Shift right (up to 3 times) = 5 per
 </div>
 <div created="20201205145112900" modified="20201205152627597" tags="Skill MeleeSkill" title="Melee Shield">
 <pre>[[Agility]]</pre>
+</div>
+<div created="20201205165226323" modified="20201205165250978" tags="DefensiveSpell Spell" title="Mend">
+<pre>&quot;&quot;&quot;
+The caster is able to repair items that haven’t been totally destroyed. The material reknits before your eyes. 
+
+Cost: 5
+Time: 5 Minutes
+Target: Touch
+Target Number: 7
+Effect: Each Success restores 1 durability to the item. This can only be cast once per day per item. This can only be used on armour damaged by mundane means.
+
+Level up: 
+-1 Difficulty: 5
+Repair all damage: 5
+&quot;&quot;&quot;</pre>
 </div>
 <div created="20201204153240329" modified="20201205150050434" tags="Profession" title="Mercenary">
 <pre>&quot;&quot;&quot;
@@ -11160,6 +11534,37 @@ You have an acquaintance or friend in any area of government or organisation you
 </div>
 <div created="20201205152505732" modified="20201205152505732" tags="Skill MissileSkill" title="Missile Thrown">
 <pre></pre>
+</div>
+<div created="20201205165145718" modified="20201205165201890" tags="DefensiveSpell Spell" title="Mist">
+<pre>&quot;&quot;&quot;
+A commonly used spell often used on battlefields, but often dispelled as well due to the severity to ranged weapons.
+Cost: 5
+Action: 2 Full
+Upkeep: Yes per character unaffected. 
+AOE: 60/120/180/240/320 (+1, +2, +3, +4,+5)
+Difficulty: 7 
+Description: Anyone inside the Mist can only see 25ft.  Each Success grants the user or targets 5 additonal feet of vision. 
+
+Level Up:
+1 person free upkeep (can be taken 5 times): 5
+-1 Action: 10
+AOE Shift right (up to 4 times): 5
+&quot;&quot;&quot;</pre>
+</div>
+<div created="20201205165204307" modified="20201205165223074" tags="DefensiveSpell Spell" title="Momentum">
+<pre>&quot;&quot;&quot;
+The target is boosted by magical means allowing him to exceed his normal speed. 
+Cost: 5
+Target: LOS
+Target Number: 8
+Duration: 1/2/3/4 (0,+2,+4,+6)
+Effect: Each Success gives an additional square of movement for 1 round. However each Success reduces the durability of the boots.
+
+Level up: 
+No durability reduction to boots: 5
+-1 Difficulty: 5
+Duration shift right: 5
+&quot;&quot;&quot;</pre>
 </div>
 <div created="20201204155854318" modified="20201204155900301" title="Movement">
 <pre>This is a base of your race. This is how many miles you can cover in 2 hours and the amount of squares of hexes you can move when in combat.</pre>
@@ -11244,6 +11649,22 @@ Poison Resistance rolls gain +1AS
 <pre>!!! Power Points
 This is the total of your [[Magic]] and [[Faith]] stat added together. This represents your stored power. This reduces when you successfully cast runes and cast spells with extra power. </pre>
 </div>
+<div created="20201205164833402" modified="20201205164851698" tags="DefensiveSpell Spell" title="Preservation">
+<pre>&quot;&quot;&quot;
+Cost: 10
+Time: Full Action
+Upkeep: Yes
+Range: LOS
+Difficulty: 14	
+Effect: If the caster is in Line of sight of the character who has fallen and has not cast any spells then he may cast this spell to prevent a character from immediately dying. If a character is to be kept alive then he must have his wound level at 7. Each Success reduces damage by 1. E. G. Roach takes 10 damage but to even survive this spell must be enacted and roll 3 successes. Roach would still be unconscious but would be alive. This must be upkept to prevent the character bleeding out.
+Description: The caster fires a golden energy at his comrade which prevents his death and forms a shield surrounding his comrade. This spells stops the character in question from bleeding out and dying of it is upkept. This spell was commonly used to save leaders in the Great Wars.
+
+Level Up: 
+-1 Difficulty (up to 4 times) = 5
+Upkeep changed to magic stat in rounds: 5
+1 A/S = 10
+&quot;&quot;&quot;</pre>
+</div>
 <div created="20201204153347560" modified="20201204183814217" tags="Profession" title="Priest">
 <pre>&quot;&quot;&quot;
 [[Faith]] +4
@@ -11253,6 +11674,24 @@ Starting Equipment: Staff, Holy Robes, Shoes, flint &amp; steel, water canteen, 
 </div>
 <div created="20201204151013238" modified="20201205160643806" title="Profession">
 <pre>&lt;&lt;list-links &quot;[tag[Profession]]+[sort[]]&quot;&gt;&gt;</pre>
+</div>
+<div created="20201205165347987" modified="20201205165404155" tags="DefensiveSpell Spell" title="Protection">
+<pre>&quot;&quot;&quot;
+Elemental protection spell, absorbs the number of successes scored in successes.
+
+Cost: 5
+Casting: 1 Turn
+Difficulty: 9
+Duration: Upkeep
+Range: Touch
+Description: Each success absorbs 1 point of elemental damage from fire, earth, lightning or ice spells. This is used before the caster roll his elemental damage soak. 
+
+Level Up:
+-1 Difficulty (can be taken two times) = 5
+Range shift LOS = 5
+Casting Reaction = 5 (Can be cast immediately if in range of target) 
+Duration: 2/4/6 (Up to 3 times) = 5
+&quot;&quot;&quot;</pre>
 </div>
 <div created="20201204144543023" modified="20201205160640359" tags="" title="Race">
 <pre>&lt;&lt;list-links &quot;[tag[Race]]+[sort[]]&quot;&gt;&gt;</pre>
@@ -11284,8 +11723,72 @@ Cannot heal fire/acid damage.
 &quot;&quot;&quot;
 </pre>
 </div>
+<div created="20201205164014346" modified="20201205164048411" tags="DefensiveSpell Spell" title="Regeneration">
+<pre>&quot;&quot;&quot;
+The caster hand and the target illuminates in a pale green light whilst casting. The targets wound begin to continually heal over time. This leaves a permanent scar. 
+
+Pre-Requisite: [[Heal]]
+Restoration Time: Full Action 
+Range: Touch 
+Difficulty: 7 
+Upkeep: Yes 
+Effect: Each success gives 1 dice that they may use every round that the spell is up kept to heal themselves. Each Regen on a target is rolled separately. 
+Limit: This spell may not heal more than 1 health level per turn.
+Regen TN:
+Minor Wound = 6 
+Wounded = 7 
+M.Wounded = 8 
+Debilitated = 9 
+Expiring = 10 
+
+Level upgrade: 
+Range: LOS = 5 
+May Repair Limbs out of combat = 10 
+Greater Regen (Drops Regen TN by 1) = 10 
+1 A/S on Casting Roll = 10
+Increase Limit to 2 per Turn = 10
+&quot;&quot;&quot;</pre>
+</div>
 <div created="20201205154355021" modified="20201205154355021" tags="Skill" title="Religion">
 <pre></pre>
+</div>
+<div created="20201205164856938" modified="20201205164910817" tags="DefensiveSpell Spell" title="Resist Pain">
+<pre>&quot;&quot;&quot;
+The caster uses his power to stop the person from feeling pain allowing them to continue fighting unhindered by their wounds.
+Cost: 5
+Time: Full Action
+Range: (LOS) 
+Upkeep: Yes 
+Difficulty: 
+Minor Wound = 7
+Wounded = 8
+Major Wound = 10
+Debilitated = 14
+Expiring = 16
+Effect: Each success reduces TN penalty by 1.
+
+Level Up: 
+-1 Total Difficulty reduction = 5
+Difficulty -1 to expiring, Debilitated (up to 2 times) = 5
+Upkeep to Magic stat in rounds = 5
+&quot;&quot;&quot;</pre>
+</div>
+<div created="20201205164914811" modified="20201205164937954" tags="DefensiveSpell Spell" title="Restoration">
+<pre>&quot;&quot;&quot;
+The caster bathes the target in light as the magic restores the Wounded. This combat heal is used to keep warriors fighting. 
+Cost: 5
+Target: Touch
+Target Number: 9
+Effect: Each Success heals 1 wound level. This spell can only be used to heal targets that have been “Minor wounded, Wounded”
+
+Level up: 
+Can heal up to “Major Wounded” = 5
+Lifesaver (can be used on targets with higher wound level than “wounded”, will stabilise them on 1 success but not heal them): 5
+-1 Difficulty (2 times): 5
+LOS: 5
+1 A/S: 10
+Mastery: Spell successes leap in Magic x feet to nearest friendly target healing them with remaining successes. 
+&quot;&quot;&quot;</pre>
 </div>
 <div created="20201205144242891" modified="20201205144259801" tags="Skill" title="Riding">
 <pre>[[Agility]]
@@ -11356,6 +11859,26 @@ Starting Equipment: Sword, Common Clothes, Cloak, flint &amp; steel, water cante
 <pre>[[Agility]]
 [[Constitution]]
 </pre>
+</div>
+<div created="20201205163937691" modified="20201205164003849" tags="DefensiveSpell Spell" title="Salvation">
+<pre>&quot;&quot;&quot;
+Cost: 5
+Prerequisite: [[Heal]], [[Restoration]]
+Time: Full Action
+Range Self AOE: 30/40/60/80 feet (0, +1, +2, +3TN)
+Difficulty: 
+Minor Wound = 8
+Wounded = 10
+Effect: The TN is the highest level of wound in the AOE. Each Success heals 1 wound box from every person in the AOE. But every attempt to heal on same target increases difficulty by +2. This can only be used to heal “wounded” characters.
+Description: A golden energy emits from the casters feat encompassing those surrounding them and healing there wounds. 
+
+Level Upgrade: 
+AOE increase shift right (up to 3 times) = 5 per
+-1 Difficulty TN (up to 3 times) = 5 per
+Can heal Major Wound at TN10 = 10
+LOS range = 5
+1 A/S = 15
+&quot;&quot;&quot;</pre>
 </div>
 <div created="20201205153600984" modified="20201205153812453" tags="Perk" title="Schemer">
 <pre>&quot;&quot;&quot;
@@ -11473,9 +11996,62 @@ This attribute shows how strong you are.</pre>
 [[Intelligence]] or [[Wisdom]] +1
 &quot;&quot;&quot;</pre>
 </div>
+<div created="20201205163655866" modified="20201205163721978" tags="OffensiveSpell Spell" title="Stun Bolt">
+<pre>&quot;&quot;&quot;
+Often used in practice and training for mages who like to duel, and the ones who get into the occasional pub brawl.
+
+Cost: 5 
+Pre requisite: [[Mana Bolt]]
+Range: Magic Stat x10/15/20 (0, +1, +2)
+Difficulty: 7
+Damage: Magic/Faith x1/x1.5/x2 (0, +1, +2)
+Duration: 1
+Effect: This can be dodged and blocked by shields. If target is hit it can be resisted using Con or Magic Resistance.. If the target is hit each damage caused counts as 2 when attempting to stay conscious. Wound penalties caused only stay for 1 round. E. G Marc gets hit for 2 damage and his con is 3.but cause this is a stun bolt the damage counts as 4 so he must make a roll to remain conscious.
+
+Level Up:
+Difficulty (once only) = 5 per
+Range shift right (two times only) = 5 per
+Damage Duration increase 2 rounds = 10
+Damage shift right (2 times) = 5
++1AS Damage (3 Times) = 5/10/15
+Numb Shield If the attack is blocked then the blockers arm becomes numb and useless for the spell duration meaning it cannot be used to parry or attack on the targets next go = 10
+&quot;&quot;&quot;</pre>
+</div>
+<div created="20201205164951644" modified="20201205165008858" tags="DefensiveSpell Spell" title="Stun Shield">
+<pre>&quot;&quot;&quot;
+Used to help protect the caster and disable attackers it was often used by mages to protect themselves when the lines of battle were broken.
+Cost: 5
+Target: Self
+AOE: 5/15/30/45 (0/+4/+6/+8)
+Upkeep: Yes
+Target Number: 8
+Each Success allows the caster to roll a stunning damage roll equal to successes rolled to anyone who enters or exits the perimeter of the stun shield. Any damage is magical damage. Any points of damage count as 2 wounds when rolling to stay conscious. 
+This is capped by the casters Faith/Magic stat rounded down to targets who enter/exits the shield. 
+
+Level Up:
+AOE shift right (up to 3 times) = 5 per
+Upkeep to Magic stat in rounds = 5
+-1 Difficulty = 5
+Magic Cap doubled = 10
+&quot;&quot;&quot;</pre>
+</div>
 <div created="20201205145019036" modified="20201205145033387" tags="Skill" title="Survival">
 <pre>[[Wisdom]]
 [[Perception]]</pre>
+</div>
+<div created="20201205165334045" modified="20201205165346370" tags="DefensiveSpell Spell" title="Sustain">
+<pre>&quot;&quot;&quot;
+Cost: 3 
+Range: Self 
+Upkeep: N0
+Difficulty: 7 (+2TN per consecutive day) TN do not reset until target has fully rested and eaten a good meal. 
+Effect: The target enters a meditate state for 1 hour, after which he can go without food, water and sleep for 3 hours per success gained. Only if the target is willing. Spell can only be cast on one Target, can be re cast on same target for consecutive days, can not change to another target until the spell is reset.
+
+Level Upgrades: 
+-1 difficulty (up to 3 times) = 5 
+Range Touch= 5
++1 person can be targeted (up to 5 times) = 5
+&quot;&quot;&quot;</pre>
 </div>
 <div created="20201205144324643" modified="20201205144342050" tags="Skill" title="Tactics">
 <pre>[[Intelligence]]
@@ -11542,6 +12118,22 @@ Thrown Objects: Throwing an object means it is considered to be an extreme manoe
 Throwing People: You may attempt to throw a person in combat and they can attempt to use acrobatics as a counter. The difficulty is dependent on the weight of the person. The acrobatics difficulty is the same as the casters difficulty. If you achieve 1 success over the person you are attempting to throw it means you have thrown them and they travel your distance in magic to hitting an inanimate object. Damage is not soak able with armour but you can soak with any natural save. For every success you beat the defender you gain 1D10 damage.
 &quot;&quot;&quot;</pre>
 </div>
+<div created="20201205165300883" modified="20201205165323979" tags="DefensiveSpell Spell" title="Telekinetic Barrier">
+<pre>&quot;&quot;&quot;
+Similar to the ethereal weapon except instead focused on the pure magical power of the caster. The caster uses his power to push away attacks of non-magical means.
+Pre-Requisite: [[Earth Armour]] Lv3
+Cost: 10
+Upkeep: Yes
+TN: 8
+Description: 
+Effect: This is rolled instead of a parry or dodge. The caster uses this spell at the target number above to deflect the attacks away from him. Each following deflection after the 1st increase TN by 3. 
+
+Level up: 
+-1 Difficulty = 5
+-1TN to following deflections after 1st = 5
++1 A/S (up to 2) = 10
+&quot;&quot;&quot;</pre>
+</div>
 <div created="20201205162721376" modified="20201205162738512" tags="OffensiveSpell Spell" title="Telekinetic Push">
 <pre>&quot;&quot;&quot;
 This is often used to move or knock something over. 
@@ -11580,6 +12172,23 @@ Level Up:
 Difficulty (twice only) = 5 per
 &quot;&quot;&quot;</pre>
 </div>
+<div created="20201205165123762" modified="20201205165143739" tags="DefensiveSpell Spell" title="Telepathic Message">
+<pre>&quot;&quot;&quot;
+A fast method of communication over long distance it was used during devourer war by the mage guild. 
+Action: 3 Full. 
+Upkeep: No
+Target Number: 10 miles = 7
+20 Miles = 8
+40 miles = 9
+80 miles = 10
+160 miles = 12
+Effect: Each Success grants 6 words that can only be sent to another magic user with the same ability. Each success grants 1 word to a non-magic user that you know. Every consecutive message to the same person that day increases target number by 2.
+
+Level Up: 
+-1 Full Action (up to 2 times) = 5
+-1 Difficulty = 5
+&quot;&quot;&quot;</pre>
+</div>
 <div created="20201205153609135" modified="20201205154225757" tags="Perk" title="Terrain Affinity">
 <pre>&quot;&quot;&quot;
 Cost: 5
@@ -11600,6 +12209,17 @@ Increase armour by 1 vs Slashing, Piercing and Bashing. Can not be purchased wit
 [[Pickpocket]], [[Stealth]], [[Concealment]], [[Pick Locks]], [[Streetwise]], [[Appraising]] +1
 [[Speedy]]
 Starting Equipment: 2 Daggers, 2 Weeks Trail Rations, Standard Clothes, Boots, Blanket, Flint &amp; Steel, Water Canteen, 6D10 Silver, lockpicks flask of ale. Satchel.
+&quot;&quot;&quot;</pre>
+</div>
+<div created="20201205163725282" modified="20201205163746273" tags="OffensiveSpell Spell" title="Tornado">
+<pre>&quot;&quot;&quot;
+Cost: 5
+Target Number: 7
+Description: The caster summons a giant tornado knocking anyone in the AOE from there feet and throwing them backwards 5 feet.
+Range: 60/100/140/180 each increase to range adds +1 TN. 
+AOE: 15/30/45/60/75 each increase to AOE adds 1TN.
+Duration: 2
+Effect: Each Success decreases anyone in the AOEs agility by 1 success. If target is reduced to 1 agility then they are immediatly knocked over and cannot move. This can be resisted using agility only.. Anyone who takes an agility penalty is pulled 5 feet to centre of the tornado. Each 5 feet inside the AOE increases range TN by 2. Anyone entering AOE must make same roll which last for duration of spell.
 &quot;&quot;&quot;</pre>
 </div>
 <div created="20201205144711348" modified="20201205144745457" tags="Skill" title="Tracking">
@@ -11654,6 +12274,28 @@ Per Points: 15
 Country’s: [[Nordheim]]
 &quot;&quot;&quot;</pre>
 </div>
+<div created="20201205164314995" modified="20201205164338355" tags="DefensiveSpell Spell" title="Wall of Vine">
+<pre>&quot;&quot;&quot;
+The earth goes up to the casters magic stat x2 feet up as a huge wall of living vines spill from the earth. 
+Cost: 10
+Time: 3 Action
+Difficulty: 8
+Duration: Upkeep
+Range: Magic Stat x3/x4/x5/x6 (0, +1, +2, +3)
+AOE Length: 15/30/60/90/120  (0, +1, +2, +3, +4)
+AOE Width: 5/10/15 (0, +2, +4)
+Vine Thickness: 0/ +2/+4/+6 armour (0, +2, +4, +6TN)
+Effect: Anyone attempting to fire though the wall have their TN increased by 1 per 5 foot travelled. The number of successes represent the Strength and Constitution of the Vines and the number doubled is the amount of damage they take before the spell dissipates. Anyone attempting to come through or attack the vines must roll a contested strength roll per square. If they fail to beat the strength they become entangled and can make no further actions until there following turn. The vines use constitution to resist damage. 
+
+Level Up:
+-1 Action = 5
+-1 Difficulty (can be taken two times) = 5
+Range shift right (can be taken 3 times) = 5
+AOE Length shift right (4 times) = 5
+AOE Width shift right (2 times) = 10
+Vine Thickness (3 times) = 10
+&quot;&quot;&quot;</pre>
+</div>
 <div created="20201204153615759" modified="20201204183256267" tags="Profession" title="Watcher">
 <pre>&quot;&quot;&quot;
 [[Religion]] +1, [[Willpower]] +2
@@ -11694,6 +12336,43 @@ AOE Width (up to 2 times) = 5 per
 Range shift right (up to 3 times) = 5 per
 Wind Duration effect shift right (up to 4 times) = 5 per
 Cyclone moving though affected squares cost 3 movement = 10 
+&quot;&quot;&quot;</pre>
+</div>
+<div created="20201205164345842" modified="20201205164402489" tags="DefensiveSpell Spell" title="Wind Shield">
+<pre>&quot;&quot;&quot;
+The casters makes shield of wind around himself that spins like a tornado around the target making ranged attacks against them more difficult.
+Cost: 5	
+Time: Full Action
+Difficulty: 9
+Range: LOS
+Upkeep: Yes
+Effect: Each success reduces the attacker’s successes by 1. However you cannot dodge whilst inside this shield.
+
+Level up:
+Bonus target (up to 2): 5
+Upkeep changes to Magic/Faith in rounds: 5
+-1 Difficulty Reduction (up to 2 times) = 5 per
+&quot;&quot;&quot;</pre>
+</div>
+<div created="20201205164409809" modified="20201205164427649" tags="DefensiveSpell Spell" title="Wind Wall">
+<pre>&quot;&quot;&quot;
+The casters makes shield of wind around himself that spins like a tornado around the target making ranged attacks against them more difficult.
+Pre-Requisite: [[Wind Shield]]
+Cost: 5	
+Time: Full Action
+Difficulty: 8
+Range: Magic/Faith stats x 5 feet.
+AOE Width: 5/10/15/20
+AOE Length:10/15/25/35/50
+Upkeep: Yes
+Effect: Each success reduces any ranged successes by 1 per 5 feet of width. E.g. Davarus casts the spell at difficulty 12 and gets 2 successes to cast a 10 x 10 wind wall. Any ranged attack travelling through the width of the wind wall have these successes reduced by 4. The wind wall counts as rough terrain and doubles movement speed on affected squares.
+
+Level up:
+AOE Width shift right (up to 3 times) = 10
+AOE length shift right (up to 3 times) = 5
+Upkeep changes to Magic/Faith in rounds: 5
+-1 Difficulty Reduction (up to 2 times) = 5 per
+Range increase x10 instead of x5 = 5
 &quot;&quot;&quot;</pre>
 </div>
 <div created="20201204144026702" modified="20201204173413753" tags="Attribute" title="Wisdom">
