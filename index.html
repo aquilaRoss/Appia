@@ -231,6 +231,8 @@ Error message and password prompt
 
 <li>Ardon</li>
 
+<li>Arm Critical</li>
+
 <li>Armour Piercing</li>
 
 <li>Armour Proficiency (Heavy)</li>
@@ -284,6 +286,8 @@ Error message and password prompt
 <li>Blocking Rune</li>
 
 <li>Bloodthirsty</li>
+
+<li>Body Critical</li>
 
 <li>Born in the Saddle</li>
 
@@ -350,6 +354,10 @@ Error message and password prompt
 <li>Craftsmen</li>
 
 <li>Craftsmen Apprentice</li>
+
+<li>Critical Hit Location</li>
+
+<li>Critical Hit Tables</li>
 
 <li>Crossbow</li>
 
@@ -520,6 +528,8 @@ Error message and password prompt
 <li>Half Plate</li>
 
 <li>Hammer</li>
+
+<li>Hand Critical</li>
 
 <li>Hand Crossbow</li>
 
@@ -10480,7 +10490,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20201210115350766" list="" modified="20201210155601904" title="$:/StoryList">
+<div created="20201210115350766" list="[[Main Rules]]" modified="20201210160927416" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10544,7 +10554,7 @@ Error message and password prompt
 <div created="20201204170137984" modified="20201204170137984" title="$:/temp/NewTagName">
 <pre></pre>
 </div>
-<div created="20201204162253787" modified="20201210155908885" title="$:/temp/search">
+<div created="20201204162253787" modified="20201210155953676" title="$:/temp/search">
 <pre></pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.22">
@@ -10831,6 +10841,15 @@ Multi Shot TN Mod: N/A&quot;&quot;&quot;
 </div>
 <div created="20201204160032414" modified="20201204172138574" tags="Place" title="Ardon">
 <pre></pre>
+</div>
+<div created="20201210161458139" modified="20201210161459896" title="Arm Critical">
+<pre>| Leg | Roll | Piercing | Blunt | Slashing |
+| Permanent Scar | 1 to 3 | No gameplay effect. | No gameplay effect. | No gameplay effect. |
+| Minor Injury | 4 to 6 |  |  | Minor Amputation: Lost a few toes - 1 Movement |
+| Moderate Injury | 7 &amp; 8 |  |  | Amputation: Lost foot 1/2 Movement |
+| Severe Injury | 9 |  |  | Major Amputation: Entire Leg cut away, reduced to crawling and hopping. Movement 1. |
+| Dead | 10 |  |  |  |
+</pre>
 </div>
 <div created="20201210133304557" modified="20201210133312803" tags="Perk" title="Armour Piercing">
 <pre>&quot;&quot;&quot;
@@ -11130,6 +11149,15 @@ Cost: 4 (Perk Points)
 Max Level: 2
 If you kill an enemy outright you immediatly make an additional melee attack at half dice against the next adjacent target.At 2nd level this is full dice. This can be used once per turn per level.Can only be purchased with frenzy. 
 &quot;&quot;&quot;
+</pre>
+</div>
+<div created="20201210161442179" modified="20201210161443296" title="Body Critical">
+<pre>| Type | Roll | Piercing | Blunt | Slashing |
+| Permanent Scar | 1 to 3 | No gameplay effect. | No gameplay effect. | No gameplay effect. |
+| Minor Injury | 4 to 6 |  |  |  |
+| Moderate Injury | 7 &amp; 8 |  |  |  |
+| Severe Injury | 9 |  |  |  |
+| Dead | 10 |  |  |  |
 </pre>
 </div>
 <div created="20201210145214555" modified="20201210145227522" tags="Perk" title="Born in the Saddle">
@@ -11460,6 +11488,22 @@ Max Level: 1
 Either a [[Bowyer]], [[Blacksmith]] or [[Armour Smith]] or [[Weapon Smith]] +2.
 [[Strength]] or [[Intelligence]] +1
 &quot;&quot;&quot;</pre>
+</div>
+<div created="20201210160636358" modified="20201210160916184" title="Critical Hit Location">
+<pre>| ''Injury Roll'' | ''Location'' |
+| 1 | [[Left Hand|Hand Critical]]  |
+| 2 | [[Right Hand|Hand Critical]] |
+| 3, 4, 5 | [[Body|Body Critical]] |
+| 5 | [[Left Leg|Leg Critical]] |
+| 6 | [[Right Leg|Leg Critical]] |
+| 7 | [[Right Arm|Arm Critical]]  |
+| 8 | [[Left Arm|Arm Critical]] |
+| 9 | [[Neck|Neck Critical]] |
+| 10 | [[Head|Head Critical]] |
+</pre>
+</div>
+<div created="20201210160537297" modified="20201210160742272" title="Critical Hit Tables">
+<pre>Find the location of the Critical Hit - [[Critical Hit Location]]</pre>
 </div>
 <div created="20201210120105277" modified="20201210120116389" tags="MissileWeapon" title="Crossbow">
 <pre>&quot;&quot;&quot;
@@ -12451,6 +12495,15 @@ Defending AS (Melee): 0
 Defending AS (Ranged): 0
 Damage Dice: 6
 [[Concussive]]&quot;&quot;&quot;
+</pre>
+</div>
+<div created="20201210161111293" modified="20201210161113200" title="Hand Critical">
+<pre>| Type | Roll | Piercing | Blunt | Slashing |
+| Permanent Scar | 1 to 3 | No gameplay effect. | No gameplay effect. | No gameplay effect. |
+| Minor Injury | 4 to 6 | Damaged Nerves: -1D to fine dexterity movements | Shattered Bone: -1D in cold weather to Bow Skill | Minor Amputation: You lost a finger or the end of one which reduces your fine dexterity by 1. |
+| Moderate Injury | 7 &amp; 8 | As above except your hand is unusable for the next month. | Shattered Bones: As above except your hand is unusable for 2 month. | Amputation: As above except you lose 2 fingers and must be healed or you bleed out and die from your wounds in your constitution doubled in rounds. -1 permanent dexterity to any hand movements. |
+| Severe Injury | 9 | Your hand is rendered nearly completely useless. | Your Hand is a complete wreck and permanently unusable. | Major Amputation: Your Hand is amputated and now unusable and you continue to bleed unless you are healed in your constitution as rounds. You can no longer use any 2 handed weapons. |
+| Dead | 10 |  |  |  |
 </pre>
 </div>
 <div created="20201210120046774" modified="20201210120100301" tags="MissileWeapon" title="Hand Crossbow">
@@ -13693,14 +13746,15 @@ Upkeep changed to magic stat in rounds: 5
 1 A/S = 10
 &quot;&quot;&quot;</pre>
 </div>
-<div created="20201207131432186" modified="20201207132142829" title="Prestige">
+<div created="20201207131432186" modified="20201210160506847" title="Prestige">
 <pre>&quot;&quot;&quot;
 Can be converted into [[Perk Point]]'s at a 2:1 (Prestige:Perk) Ratio
 Can be converted into [[Spell XP]] at a 1:1 Ratio
-Can be used to increase [[Skills]]
-Can be used to increase [[Attributes]]
+Can be used to purchase new [[Skills]] - Minimum Cost of 1, Cost is based on Six minus the Highest associated Attribute. (GM May require a trainer of Skill 3 or better)
+Can be used to increase [[Skills]] - Current Rating. (eg from 3 to 4 costs 3 Prestige)
+Can be used to increase [[Attributes]] - New Rating * 3. (eg from 3 to 4 costs 12 Prestige)
 Can be used to purchase a re-roll. This many only be done up to your [[Wisdom]] number of times for that roll.
-Can be used to buy an AS on a Resistance/Soak Roll. This many only be done up to your [[Wisdom]] number of times.
+Can be used to buy an AS on a Resistance/Soak Roll. This many only be done up to your [[Wisdom]] number of times on that roll.
 &quot;&quot;&quot;</pre>
 </div>
 <div created="20201204153347560" modified="20201204183814217" tags="Profession" title="Priest">
