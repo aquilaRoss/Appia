@@ -215,6 +215,8 @@ Error message and password prompt
 
 <li>Alchemy Lore</li>
 
+<li>Alternate Craft Quality</li>
+
 <li>Ambidextrous</li>
 
 <li>Ambusher</li>
@@ -370,6 +372,10 @@ Error message and password prompt
 <li>Counter Spell</li>
 
 <li>Courageous</li>
+
+<li>Crafting</li>
+
+<li>Crafting Quality</li>
 
 <li>Craftsmen</li>
 
@@ -773,6 +779,8 @@ Error message and password prompt
 
 <li>Multi-Attack</li>
 
+<li>Multiple Actions</li>
+
 <li>Night Vision</li>
 
 <li>Nimble</li>
@@ -856,6 +864,8 @@ Error message and password prompt
 <li>Rapid Shot</li>
 
 <li>Rapier</li>
+
+<li>Reactive Defence</li>
 
 <li>Read and Write Language</li>
 
@@ -10561,7 +10571,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20201212170814297" list="Rune [[Burn Rune]] [[Affliction Rune]] [[Main Rules]]" modified="20201212170937280" title="$:/StoryList">
+<div created="20201213173453500" list="[[Multiple Actions]] [[Reactive Defence]]" modified="20201213183550344" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10609,11 +10619,11 @@ Error message and password prompt
         },
         &quot;$:/info/browser/screen/width&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
-            &quot;text&quot;: &quot;2560&quot;
+            &quot;text&quot;: &quot;1366&quot;
         },
         &quot;$:/info/browser/screen/height&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/height&quot;,
-            &quot;text&quot;: &quot;1440&quot;
+            &quot;text&quot;: &quot;768&quot;
         },
         &quot;$:/info/browser/language&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/language&quot;,
@@ -10625,8 +10635,8 @@ Error message and password prompt
 <div created="20201204170137984" modified="20201204170137984" title="$:/temp/NewTagName">
 <pre></pre>
 </div>
-<div created="20201204162253787" modified="20201212170844105" title="$:/temp/search">
-<pre>profes</pre>
+<div created="20201204162253787" modified="20201213183546972" title="$:/temp/search">
+<pre>inter</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.22">
 <pre>{
@@ -10821,6 +10831,16 @@ Alerts to exact direction: 2
 </div>
 <div created="20201210163145871" modified="20201210163145871" tags="Skill" title="Alchemy Lore">
 <pre></pre>
+</div>
+<div created="20201213175504025" modified="20201213175512365" title="Alternate Craft Quality">
+<pre>| Innate Magical Craft | Workmanship Mod | Normal /Price Multiplier | Fine/Decorative | Exquistite | Master | Legendary | Mythical | Cost per Point |
+| Elven Armour | 10 per Level | 1 | 2 | 3 | 4 | 5 | 5 | x1.5 |
+| Elven Weapons | 9 per Level | 1 | 2 | 3 | 4 | 5 | 6 | x1.5 |
+| Dwarven Armour | 9 per Level | 1 | 2 | 3 | 4 | 5 | 6 | x1.5 |
+| Dwarven Weapon | 10 per Level | 1 | 2 | 3 | 4 | 5 | 5 | x1.5 |
+| High Elves  | 12 per Level | 2 | 3 | 4 | 5 | 6 | 7 | x2 |
+| Drakien | 12 per Level | 2 | 3 | 4 | 5 | 6 | 7 | x2 |
+</pre>
 </div>
 <div created="20201210133218084" modified="20201210133227724" tags="Perk" title="Ambidextrous">
 <pre>&quot;&quot;&quot;
@@ -11580,6 +11600,35 @@ Max Level: 1
 +1 A/S vs fear and morale checks
 &quot;&quot;&quot;
 </pre>
+</div>
+<div created="20201213174210664" modified="20201213183340214" tags="" title="Crafting">
+<pre>&quot;&quot;&quot;
+Pick your base Item.
+
+[[Crafting Armour]]
+[[Crafting Ranged Weapons]]
+[[Crafting Melee Weapons]]
+[[Crafting Other]]
+
+Decide on your [[Crafting Quality]].
+
+Pick you Crafting [[Material]].
+
+&quot;&quot;&quot;</pre>
+</div>
+<div created="20201213174325361" modified="20201213175452803" title="Crafting Quality">
+<pre>| Workmanship | Extra Successes | Material | Min Skill | Bonus | Cost |
+| Poor | -2 | Any | 2 | -1 | -0.5 |
+| Normal | 0 | Any | 3 | 0 | 0 |
+| Fine | 10 | Any | 5 | 1 | x1.5 |
+| Decorative | 12 | Any | 5 | 1 | x1.6 |
+| Exquisite | 20 | Any | 6 | 2 | x2 |
+| Master | 30 | Any | 7 | 3 | x4 |
+| Legendary | 40 | Rare | 8 | 4 | x10 |
+| Legendary &amp; Ornate | 42 | Any | 8 | 4 | x12 |
+| Mythical | 50 | Rare | 9 | 5 | ? |
+| Celestial | ? | ? | ? | 10 | ? |
+If you have access to a special crafter, you may be able to use the [[Alternate Craft Quality]]</pre>
 </div>
 <div created="20201204173206646" modified="20201204173212405" tags="Upbringing" title="Craftsmen">
 <pre>[[Wisdom]] +1</pre>
@@ -13672,6 +13721,9 @@ Damage Dice: 7
 <pre>Can attack using both ends but reach is reduced by one (min Reach: 0) and 2H damage bonus no longer applies
 </pre>
 </div>
+<div created="20201213183802323" modified="20201213183855439" title="Multiple Actions">
+<pre>You may split your dice pool (any AS must also be split) as evenly as possible to have an additional action, this does not affect your defensive dice pool.</pre>
+</div>
 <div created="20201205135911735" modified="20201205135939646" tags="Perk" title="Night Vision">
 <pre>&quot;&quot;&quot;
 Cost: 5
@@ -14010,6 +14062,9 @@ Defending AS (Ranged): 0
 Damage Dice: 5
 &quot;&quot;&quot;
 </pre>
+</div>
+<div created="20201213183726627" modified="20201213183748863" tags="" title="Reactive Defence">
+<pre>As soon as you have made a free parry or dodge action you have to have an reactive parry or dodge due to survival instinct. Every time an enemy hits you, you involuntarily parry or dodge but must increase your target numbers by 2 each time you are attacked, this accumulates. This is reset back to no modifiers once you have your next turn.</pre>
 </div>
 <div created="20201210162458291" modified="20201210162610268" tags="Skill" title="Read and Write Language">
 <pre>Must specify Language - Arcane, Common, Dwarven, Elven, Drakien, Dusk Elven, Quinyan</pre>
