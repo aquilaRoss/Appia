@@ -211,6 +211,8 @@ Error message and password prompt
 
 <li>Agility</li>
 
+<li>Aiming</li>
+
 <li>Alarm Ward</li>
 
 <li>Alchemy Lore</li>
@@ -254,6 +256,8 @@ Error message and password prompt
 <li>Armour Smith</li>
 
 <li>Astrology</li>
+
+<li>Attacking</li>
 
 <li>Attribute Improvement</li>
 
@@ -311,6 +315,8 @@ Error message and password prompt
 
 <li>Bowyer</li>
 
+<li>Brace</li>
+
 <li>Brave</li>
 
 <li>Brawling</li>
@@ -320,6 +326,8 @@ Error message and password prompt
 <li>Building</li>
 
 <li>Burn Rune</li>
+
+<li>Called Shot</li>
 
 <li>Camouflage</li>
 
@@ -331,7 +339,11 @@ Error message and password prompt
 
 <li>Chain Lightning</li>
 
+<li>Channelling</li>
+
 <li>Character Generation</li>
+
+<li>Charging</li>
 
 <li>Chosen</li>
 
@@ -488,6 +500,10 @@ Error message and password prompt
 <li>Fire Ball</li>
 
 <li>Fire Storm</li>
+
+<li>Firing into Melee</li>
+
+<li>Firing out of Melee</li>
 
 <li>First Aid</li>
 
@@ -797,6 +813,10 @@ Error message and password prompt
 
 <li>Offensive Magic</li>
 
+<li>Offhand Bonus</li>
+
+<li>Offhand Penalty</li>
+
 <li>Opportunist</li>
 
 <li>Pack Animal</li>
@@ -1082,6 +1102,8 @@ Error message and password prompt
 <li>Trapping</li>
 
 <li>Trident (1H or 2H)</li>
+
+<li>Two Handed Bonus</li>
 
 <li>Umli</li>
 
@@ -10562,8 +10584,8 @@ Error message and password prompt
 <div created="20201204142855726" modified="20201204162301649" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
-<div created="20201204164327879" modified="20201205145606409" title="$:/state/tab/moresidebar-1850697562">
-<pre>$:/core/ui/MoreSideBar/Missing</pre>
+<div created="20201204164327879" modified="20201213195712085" title="$:/state/tab/moresidebar-1850697562">
+<pre>$:/core/ui/MoreSideBar/Recent</pre>
 </div>
 <div created="20201204143313046" modified="20201209160223048" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/More</pre>
@@ -10571,7 +10593,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20201213173453500" list="[[Multiple Actions]] [[Reactive Defence]]" modified="20201213183550344" title="$:/StoryList">
+<div created="20201213173453500" list="$:/ControlPanel" modified="20201213201508424" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10635,8 +10657,8 @@ Error message and password prompt
 <div created="20201204170137984" modified="20201204170137984" title="$:/temp/NewTagName">
 <pre></pre>
 </div>
-<div created="20201204162253787" modified="20201213183546972" title="$:/temp/search">
-<pre>inter</pre>
+<div created="20201204162253787" modified="20201213200243350" title="$:/temp/search">
+<pre>reacti</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.22">
 <pre>{
@@ -10809,6 +10831,10 @@ Reduce mobility by 1, Agility 6 minimum required for this perk. Does not affect 
 <div created="20201204143927511" modified="20201204172314390" tags="Attribute" title="Agility">
 <pre>!!! Agility
 This represents your speed, your ability to hit a target and how dextrous you are.</pre>
+</div>
+<div created="20201213192842252" modified="20201213192945011" tags="" title="Aiming">
+<pre>When you are using a Ranged or Thrown weapon you may use 1 full action to aim at the target this means your weapon has to be in the ready position and drawn. Each action of aiming reduces your TN by 1. This can stack for up to 2 rounds for a total of -2TN. If you are attacked whilst aiming you lose all your bonus. (See [[Channelling]] for Spells)
+</pre>
 </div>
 <div created="20201205165034314" modified="20201205165052810" tags="DefensiveSpell Spell" title="Alarm Ward">
 <pre>&quot;&quot;&quot;
@@ -10993,6 +11019,12 @@ Allows you to use medium armour with -2TN mobility. 2nd rank provides a total of
 </div>
 <div created="20201210163158776" modified="20201210163158776" tags="Skill" title="Astrology">
 <pre></pre>
+</div>
+<div created="20201213195728733" modified="20201213195951552" tags="" title="Attacking">
+<pre>This is a full action and may be taken every turn. When attacking you roll your primary weapon skill and attribute up to your skill level at the target number specified by your weapon. Your enemy must make a [[Reactive Defence]].
+
+If you are attacking a prone target then you have -1TN to hit this target and your attacking [[Attributes]] (normally [[Strength]], but may be adjusted by [[Finesse]]) as AS on the damage roll.
+</pre>
 </div>
 <div created="20201210133904020" modified="20201210133921595" tags="Perk" title="Attribute Improvement">
 <pre>&quot;&quot;&quot;
@@ -11311,6 +11343,9 @@ Multi Shot TN Mod: 3&quot;&quot;&quot;
 [[Magic]]
 [[Faith]]</pre>
 </div>
+<div created="20201213193143271" modified="20201213193222102" tags="" title="Brace">
+<pre>If a character with a reach weapon on foot elects to brace then he forgoes his turn in preparation this also means he may not move. However he can turn an opponent’s charge against them. Especially Mounted targets. When someone enters melee range of reach 1 they may immediately make an attack. They also get 1 A/S damage for every square moved over 5 squares. If the wielder has reach 2 they gain 2 A/S for every square moved over 5. If an opponent who is charging is hit by this attack then he immediately loses his charge bonus.</pre>
+</div>
 <div created="20201205153556279" modified="20201205153648525" tags="Perk" title="Brave">
 <pre>&quot;&quot;&quot;
 Cost: 2
@@ -11352,6 +11387,16 @@ Level 3: If target is minor wounded he takes fire damage. 1 A/S to Casting
 Level 4: If target is minor wounded he takes fire damage. 2 A/S to Casting
 Level 5: If target is stunned he takes fire damage. 1 A/S to rune.
 &quot;&quot;&quot;
+</pre>
+</div>
+<div created="20201213200021891" modified="20201213200204612" tags="" title="Called Shot">
+<pre>When attempting to fight an enemy you normally aim towards the body as the biggest target. You may instead attempt a “Called Shot” this is to usually ignore armour bonuses and give a special effect, if you would kill a character with [[Destiny]] with this attack, they do not roll for the location of the critical, you use the called shot location instead.
+
+* Eye – TN+10 – you may add your DM modifier from your weapon as A/S instead of rolling them. If you score major wounded the target is permanently blinded.
+* Head – TN+6 – you may add your DM modifier from your weapon at x2. If you score debilitated damage target is unconscious with no roll to save. They may also suffer a further injury as a result at GMs discretion. 
+* Neck – TN+6 - you may add your DM modifier from your weapon at x2. If you score debilitated on damage then the target will take 1 box of damage per round until healed.
+* Hand – TN+4 - If you score wounded on damage they drop whatever is in hand. If you score debilitated on Damage then the targets hand is severely damaged or severed and takes 1 damage box per round they also drop anything in there hands.
+* Leg – TN+3 if you score wounded then they suffer half movement. If debilitated on damage then target leg is severely damaged and they can only crawl and suffer 1 damage box per round.
 </pre>
 </div>
 <div created="20201205165010643" modified="20201205165029490" tags="DefensiveSpell Spell" title="Camouflage">
@@ -11422,6 +11467,9 @@ Magic Damage Shift Right (up to 3 times) = 5 per
 TN6 Unsoakable Damage = 10
 &quot;&quot;&quot;</pre>
 </div>
+<div created="20201213193016549" modified="20201213193036237" title="Channelling">
+<pre>When you are casting a spell you may use 1 full action to build your mana for your spell instead of taking it all in one burst. Each action of channelling reduces your TN by 1. This can stack for up to 2 rounds for a total of -2TN. If you are attacked before the spells completion you do not receive the TN reduction for that turn. If you have channelled 1 turn and not been attacked and then are attacked on the 2nd turn you still get -1TN as you have a build of mana. (See [[Aiming]] for Ranged or Thrown Weapons)</pre>
+</div>
 <div created="20201204143815712" modified="20201205143133297" tags="" title="Character Generation">
 <pre>&quot;&quot;&quot;
 [[Attributes]]
@@ -11433,6 +11481,10 @@ TN6 Unsoakable Damage = 10
 [[Perks]] and [[Flaws]]
 [[Finishing Touches]]
 &quot;&quot;&quot;</pre>
+</div>
+<div created="20201213193239313" modified="20201213193251843" tags="" title="Charging">
+<pre>You charge at your enemy throwing your entire might into a first strike. You charge at your movement speed and roll your running. Each success scored increases your charge movement by 1. You half your Strength as additional AS (Automatic Success) damage rounded down. However if you fail to hit the enemy he may strike you at –1TN. However a charge must be declared against a target before a roll is made and you must charge in a straight line at a minimum of 5 squares. If you fail to get to your target but they charge or engage you it still counts as if you’re charging for the next time you attack. As you don't suddenly stop.
+</pre>
 </div>
 <div created="20201210145229267" modified="20201210145245162" tags="Perk" title="Chosen">
 <pre>&quot;&quot;&quot;
@@ -12236,6 +12288,19 @@ Burning Damage Shift Right (2 times) = 10 per
 Magic Damage Shift Right (up to 3 times) = 5 per
 Holy Fire (Priest Only, Creatures of darkness cannot resist fire) = 15 per
 &quot;&quot;&quot;</pre>
+</div>
+<div created="20201213190757327" modified="20201213191332018" tags="" title="Firing into Melee">
+<pre>&quot;&quot;&quot;
+You may fire into combat at no penalty. However you may hit your ally.
+
+If you miss, any left over successes on their [[Reactive Defence]] (capped by your original attack) represent a hit on someone else in the melee (GM Choice of most likely target). They must then make a [[Reactive Defence]] but at Half Dice.
+
+EG. Attacker rolls, and scores only 2 successes. The Defender rolls, and scores 5 successes. This leave three successes, which represent the hit on the other target. Because the original roll only scored 2, the 3 on the new target is reduced to 2.
+&quot;&quot;&quot;</pre>
+</div>
+<div created="20201213191524790" modified="20201213191735895" tags="" title="Firing out of Melee">
+<pre>You may fire out of combat (or while in melee), however, the target has a reduction of -2TN to their [[Reactive Defence]].
+</pre>
 </div>
 <div created="20201210163316577" modified="20201210163316577" tags="Skill" title="First Aid">
 <pre></pre>
@@ -13721,8 +13786,8 @@ Damage Dice: 7
 <pre>Can attack using both ends but reach is reduced by one (min Reach: 0) and 2H damage bonus no longer applies
 </pre>
 </div>
-<div created="20201213183802323" modified="20201213183855439" title="Multiple Actions">
-<pre>You may split your dice pool (any AS must also be split) as evenly as possible to have an additional action, this does not affect your defensive dice pool.</pre>
+<div created="20201213183802323" modified="20201213190731231" title="Multiple Actions">
+<pre>You may split your dice pool (any AS must also be split) as evenly as possible to have an additional action, this does not affect your [[Reactive Defence]]</pre>
 </div>
 <div created="20201205135911735" modified="20201205135939646" tags="Perk" title="Night Vision">
 <pre>&quot;&quot;&quot;
@@ -13781,6 +13846,12 @@ This Skill is used with Either [[Magic]] or [[Faith]]
 and is used for the following spells.
 &lt;&lt;list-links &quot;[tag[OffensiveSpell]]+[sort[]]&quot;&gt;&gt;
 &quot;&quot;&quot;</pre>
+</div>
+<div created="20201213192117207" modified="20201213192327999" tags="" title="Offhand Bonus">
+<pre>If you are holding something in your offhand, you may either may a free [[Reactive Defence]] using that (if it is a weapon, it suffers from the [[Offhand Penalty]]) or a second attack (if it is a weapon, it suffers from the [[Offhand Penalty]]).</pre>
+</div>
+<div created="20201213192345587" modified="20201213192525778" title="Offhand Penalty">
+<pre>A Shield on your main hand, or a weapon in your offhand suffers from a -4TN penalty. This can be mitigated by the [[Ambidextrous]] Perk.</pre>
 </div>
 <div created="20201210150404842" modified="20201210150413250" tags="Perk" title="Opportunist">
 <pre>&quot;&quot;&quot;
@@ -14063,8 +14134,8 @@ Damage Dice: 5
 &quot;&quot;&quot;
 </pre>
 </div>
-<div created="20201213183726627" modified="20201213183748863" tags="" title="Reactive Defence">
-<pre>As soon as you have made a free parry or dodge action you have to have an reactive parry or dodge due to survival instinct. Every time an enemy hits you, you involuntarily parry or dodge but must increase your target numbers by 2 each time you are attacked, this accumulates. This is reset back to no modifiers once you have your next turn.</pre>
+<div created="20201213183726627" modified="20201213200314506" tags="" title="Reactive Defence">
+<pre>As soon as you have made a free parry or dodge action you have to have an reactive parry or dodge due to survival instinct. Every time an enemy hits you, you involuntarily parry or dodge but must increase your target numbers by 2 each time you are attacked, this accumulates. This is reset back to no modifiers once you have your next turn. (See [[Offhand Bonus]])</pre>
 </div>
 <div created="20201210162458291" modified="20201210162610268" tags="Skill" title="Read and Write Language">
 <pre>Must specify Language - Arcane, Common, Dwarven, Elven, Drakien, Dusk Elven, Quinyan</pre>
@@ -15158,6 +15229,10 @@ Defending AS (Melee): 0
 Defending AS (Ranged): 0
 Damage Dice: 6
 &quot;&quot;&quot;
+</pre>
+</div>
+<div created="20201213192555566" modified="20201213192824235" title="Two Handed Bonus">
+<pre>If you are wielding a Two Handed Weapon you do not gain the additional action like the [[Offhand Bonus]]. Instead all your attacks grant half (rounded down) of your [[Strength]] to the damage as Automatic Successes (AS). 
 </pre>
 </div>
 <div created="20201204145156457" modified="20201205163030257" tags="Race" title="Umli">
