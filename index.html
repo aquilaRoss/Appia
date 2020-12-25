@@ -447,6 +447,8 @@ Error message and password prompt
 
 <li>Defensive Magic</li>
 
+<li>Defensive Spells</li>
+
 <li>Defiance Rune</li>
 
 <li>Destiny</li>
@@ -827,6 +829,8 @@ Error message and password prompt
 
 <li>Material</li>
 
+<li>Materials</li>
+
 <li>Meditation</li>
 
 <li>Melee Axes</li>
@@ -904,6 +908,8 @@ Error message and password prompt
 <li>Offensive Caster</li>
 
 <li>Offensive Magic</li>
+
+<li>Offensive Spells</li>
 
 <li>Offhand Bonus</li>
 
@@ -1033,6 +1039,8 @@ Error message and password prompt
 
 <li>Runemaster (Profession)</li>
 
+<li>Runes</li>
+
 <li>Runic Magic</li>
 
 <li>Runner</li>
@@ -1124,6 +1132,12 @@ Error message and password prompt
 <li>Stagger Rune</li>
 
 <li>Star Metal</li>
+
+<li>Starting Attributes</li>
+
+<li>Starting Destiny</li>
+
+<li>Starting Prestige</li>
 
 <li>Stealth</li>
 
@@ -10715,7 +10729,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20201225143008899" list="Agility Attributes [[Main Rules]] [[Character Generation]]" modified="20201225143440734" title="$:/StoryList">
+<div created="20201225143008899" list="Material [[Runic Magic]] Materials" modified="20201225160512641" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10779,8 +10793,8 @@ Error message and password prompt
 <div created="20201204170137984" modified="20201204170137984" title="$:/temp/NewTagName">
 <pre></pre>
 </div>
-<div created="20201204162253787" modified="20201225143312623" title="$:/temp/search">
-<pre>prof</pre>
+<div created="20201204162253787" modified="20201225160511074" title="$:/temp/search">
+<pre>mater</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.22">
 <pre>{
@@ -10924,9 +10938,12 @@ Max Level: 1
 &quot;&quot;&quot;
 </pre>
 </div>
-<div created="20201204150808246" modified="20201205160709327" title="Adolescence">
-<pre>&quot;&quot;&quot;Who were your parents and what benefits did your upbringing grant you.&quot;&quot;&quot;
-&lt;&lt;list-links &quot;[tag[Upbringing]]+[sort[]]&quot;&gt;&gt;</pre>
+<div created="20201204150808246" modified="20201225153817198" title="Adolescence">
+<pre>&lt;$list filter=&quot;[tag[Upbringing]]+[sort[]]&quot;&gt;
+&lt;$link&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;br/&gt;
+&lt;$transclude field=&quot;text&quot;/&gt;&lt;br/&gt;
+&lt;br/&gt;
+&lt;/$list&gt;</pre>
 </div>
 <div created="20201205170618142" modified="20201205170644451" tags="Rune" title="Affliction Rune">
 <pre>&quot;&quot;&quot;
@@ -10950,9 +10967,8 @@ Reduce mobility by 1, Agility 6 minimum required for this perk. Does not affect 
 &quot;&quot;&quot;
 </pre>
 </div>
-<div created="20201204143927511" modified="20201204172314390" tags="Attribute" title="Agility">
-<pre>!!! Agility
-This represents your speed, your ability to hit a target and how dextrous you are.</pre>
+<div created="20201204143927511" modified="20201225151358390" tags="Attribute" title="Agility">
+<pre>This represents your speed, your ability to hit a target and how dextrous you are.</pre>
 </div>
 <div created="20201213192842252" modified="20201213192945011" tags="" title="Aiming">
 <pre>When you are using a Ranged or Thrown weapon you may use 1 full action to aim at the target this means your weapon has to be in the ready position and drawn. Each action of aiming reduces your TN by 1. This can stack for up to 2 rounds for a total of -2TN. If you are attacked whilst aiming you lose all your bonus. (See [[Channelling]] for Spells)
@@ -11205,8 +11221,14 @@ Each attribute may be improved up to 4 times at a cost of 5 points,however magic
 &quot;&quot;&quot;
 </pre>
 </div>
-<div created="20201204143827191" modified="20201225144832455" tags="" title="Attributes">
-<pre>&lt;$list filter=&quot;[tag[Attribute]]+[sort[]]&quot;&gt;
+<div created="20201204143827191" modified="20201225153458288" tags="" title="Attributes">
+<pre>&quot;&quot;&quot;
+{{Starting Attributes}} (these points may not be spend on [[Magic]] or [[Faith]])
+Any modifications based on [[Race]], [[Adolescence]], [[Teenage Years]] and [[Profession]] may not increase your attributes beyond your racial maximum. 
+You may increase them up to double their starting value using [[Prestige]].
+
+&quot;&quot;&quot;
+&lt;$list filter=&quot;[tag[Attribute]]+[sort[]]&quot;&gt;
 &lt;$link&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;br/&gt;
 &lt;$transclude field=&quot;text&quot;/&gt;&lt;br/&gt;
 &lt;br/&gt;
@@ -11844,9 +11866,8 @@ One of [[Melee Axes]], [[Melee Blunt]], [[Melee Blades]], [[Melee Polearm]], [[M
 [[Constitution]] or [[Strength]] +1
 &quot;&quot;&quot;</pre>
 </div>
-<div created="20201204143945582" modified="20201204172310086" tags="Attribute" title="Constitution">
-<pre>!!! Constitution
-This represents how tough you are, the ability to absorb damage and how much fatigue you can take. </pre>
+<div created="20201204143945582" modified="20201225151416324" tags="Attribute" title="Constitution">
+<pre>This represents how tough you are, the ability to absorb damage and how much fatigue you can take. </pre>
 </div>
 <div created="20201225142928568" modified="20201225143243904" tags="" title="Contents Page">
 <pre># Character Generation.
@@ -12104,12 +12125,15 @@ Max Level: 1
 [[Defensive Magic]] TN-1
 &quot;&quot;&quot;</pre>
 </div>
-<div created="20201205153201756" modified="20201205165619034" tags="Skill MagicSkill" title="Defensive Magic">
-<pre>&quot;&quot;&quot;
-This Skill is used with Either [[Magic]] or [[Faith]]
-and is used for the following spells.
-&lt;&lt;list-links &quot;[tag[DefensiveSpell]]+[sort[]]&quot;&gt;&gt;
-&quot;&quot;&quot;</pre>
+<div created="20201205153201756" modified="20201225155237754" tags="Skill MagicSkill" title="Defensive Magic">
+<pre>This Skill is used with Either [[Magic]] or [[Faith]] and is used for [[Defensive Spells]].</pre>
+</div>
+<div created="20201225154911940" modified="20201225155014955" tags="" title="Defensive Spells">
+<pre>&lt;$list filter=&quot;[tag[DefensiveSpell]]+[sort[]]&quot;&gt;
+&lt;$link&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;br/&gt;
+&lt;$transclude field=&quot;text&quot;/&gt;&lt;br/&gt;
+&lt;br/&gt;
+&lt;/$list&gt;</pre>
 </div>
 <div created="20201205172152397" modified="20201205172203269" tags="Rune" title="Defiance Rune">
 <pre>&quot;&quot;&quot;
@@ -12612,9 +12636,8 @@ Level 5: Use magic as radius on feet, +1A/S to casting, 3 unsoakable fire damage
 &quot;&quot;&quot;
 </pre>
 </div>
-<div created="20201204144121222" modified="20201204172322958" tags="Attribute" title="Faith">
-<pre>!!! Faith
-This is your connection to your god, the more belief you have the more power is granted this is much like magic but it’s merely a sliver of your god’s power being wielded in your hands.</pre>
+<div created="20201204144121222" modified="20201225151434834" tags="Attribute" title="Faith">
+<pre>This is your connection to your god, the more belief you have the more power is granted this is much like magic but it’s merely a sliver of your god’s power being wielded in your hands.</pre>
 </div>
 <div created="20201210145710771" modified="20201210145718962" tags="Perk" title="Faithful">
 <pre>&quot;&quot;&quot;
@@ -12710,12 +12733,12 @@ You may use your agility instead of strength on damage rolls for 1h weapons
 &quot;&quot;&quot;
 </pre>
 </div>
-<div created="20201207131351966" modified="20201207131425798" title="Finishing Touches">
+<div created="20201207131351966" modified="20201225153023480" title="Finishing Touches">
 <pre>&quot;&quot;&quot;
 [[Initiative]]
 [[Movement]]
-Starting [[Prestige]]: 10
-Starting [[Destiny]]: 1</pre>
+{{Starting Prestige}}
+{{Starting Destiny}}</pre>
 </div>
 <div created="20201205161249328" modified="20201210162231992" tags="OffensiveSpell Spell" title="Fire Ball">
 <pre>&quot;&quot;&quot;
@@ -13608,9 +13631,8 @@ Initiative Affects combat order.
 [[Agility]] + [[Perception]]
 &quot;&quot;&quot;</pre>
 </div>
-<div created="20201204144012046" modified="20201204172343520" tags="Attribute" title="Intelligence">
-<pre>!!! Intelligence
-This is how learned and knowledgeable you are.</pre>
+<div created="20201204144012046" modified="20201225151451700" tags="Attribute" title="Intelligence">
+<pre>This is how learned and knowledgeable you are.</pre>
 </div>
 <div created="20201210150210612" modified="20201210150221505" tags="Perk" title="Intense Training">
 <pre>&quot;&quot;&quot;
@@ -13993,9 +14015,8 @@ Damage Dice: 7
 &quot;&quot;&quot;
 </pre>
 </div>
-<div created="20201204144104902" modified="20201204172354510" tags="Attribute" title="Magic">
-<pre>!!! Magic
-This is your attunement to everything, all around you is mana, and magic represents how much mana you can control and wield.</pre>
+<div created="20201204144104902" modified="20201225151557633" tags="Attribute" title="Magic">
+<pre>This is your attunement to everything, all around you is mana, and magic represents how much mana you can control and wield.</pre>
 </div>
 <div created="20201210150254379" modified="20201210150303753" tags="Perk" title="Magical Resistance">
 <pre>&quot;&quot;&quot;
@@ -14214,6 +14235,13 @@ Level 5:
 |[[Lunar]]| Very Rare | -3 |
 |[[Dragon Steel]]| Legendary | -3 |
 |[[Divine Ice]]| Mythic | -4 |</pre>
+</div>
+<div created="20201225160351154" modified="20201225160428431" tags="" title="Materials">
+<pre>&lt;$list filter=&quot;[tag[Material]]+[sort[]]&quot;&gt;
+&lt;$link&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;br/&gt;
+&lt;$transclude field=&quot;text&quot;/&gt;&lt;br/&gt;
+&lt;br/&gt;
+&lt;/$list&gt;</pre>
 </div>
 <div created="20201210163548535" modified="20201210163548535" tags="Skill" title="Meditation">
 <pre></pre>
@@ -14466,12 +14494,15 @@ Max Level: 1
 [[Offensive Magic]] TN-1
 &quot;&quot;&quot;</pre>
 </div>
-<div created="20201205153152676" modified="20201205165556371" tags="Skill MagicSkill" title="Offensive Magic">
-<pre>&quot;&quot;&quot;
-This Skill is used with Either [[Magic]] or [[Faith]]
-and is used for the following spells.
-&lt;&lt;list-links &quot;[tag[OffensiveSpell]]+[sort[]]&quot;&gt;&gt;
-&quot;&quot;&quot;</pre>
+<div created="20201205153152676" modified="20201225160108703" tags="Skill MagicSkill" title="Offensive Magic">
+<pre>This Skill is used with Either [[Magic]] or [[Faith]] and is used for [[Offensive Spells]].</pre>
+</div>
+<div created="20201225155926148" modified="20201225160026492" tags="" title="Offensive Spells">
+<pre>&lt;$list filter=&quot;[tag[OffensiveSpell]]+[sort[]]&quot;&gt;
+&lt;$link&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;br/&gt;
+&lt;$transclude field=&quot;text&quot;/&gt;&lt;br/&gt;
+&lt;br/&gt;
+&lt;/$list&gt;</pre>
 </div>
 <div created="20201213192117207" modified="20201213192327999" tags="" title="Offhand Bonus">
 <pre>If you are holding something in your offhand, you may either may a free [[Reactive Defence]] using that (if it is a weapon, it suffers from the [[Offhand Penalty]]) or a second attack (if it is a weapon, it suffers from the [[Offhand Penalty]]).</pre>
@@ -14516,9 +14547,8 @@ Starting Equipment: Any melee weapon of your choice, Shield or 2 Handed Weapon, 
 <pre>one additional [[Durability]] damage to any shield or armour hit.
 </pre>
 </div>
-<div created="20201204144044879" modified="20201204172403645" tags="Attribute" title="Perception">
-<pre>!!! Perception
-This is your ability to perceive your surroundings and deal with other socially.</pre>
+<div created="20201204144044879" modified="20201225151618335" tags="Attribute" title="Perception">
+<pre>This is your ability to perceive your surroundings and deal with other socially.</pre>
 </div>
 <div created="20201207131612238" modified="20201207131628470" title="Perk Point">
 <pre>Given during character creation, can be used to purchase [[Perks]]</pre>
@@ -14647,8 +14677,12 @@ One of [[Offensive Magic]], [[Defensive Magic]] or [[Runic Magic]] +1
 Starting Equipment: Staff, Holy Robes, Shoes, flint &amp; steel, water canteen, backpack, tent, bedroll, water canteen, 2-week trail rations. 6d10 silver, Holy Symbol
 &quot;&quot;&quot;</pre>
 </div>
-<div created="20201204151013238" modified="20201205160643806" title="Profession">
-<pre>&lt;&lt;list-links &quot;[tag[Profession]]+[sort[]]&quot;&gt;&gt;</pre>
+<div created="20201204151013238" modified="20201225160413592" title="Profession">
+<pre>&lt;$list filter=&quot;[tag[Profession]]+[sort[]]&quot;&gt;
+&lt;$link&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;br/&gt;
+&lt;$transclude field=&quot;text&quot;/&gt;&lt;br/&gt;
+&lt;br/&gt;
+&lt;/$list&gt;</pre>
 </div>
 <div created="20201205165347987" modified="20201205165404155" tags="DefensiveSpell Spell" title="Protection">
 <pre>&quot;&quot;&quot;
@@ -14738,8 +14772,12 @@ Cost : x1.5
 &quot;&quot;&quot;
 </pre>
 </div>
-<div created="20201204144543023" modified="20201205160640359" tags="" title="Race">
-<pre>&lt;&lt;list-links &quot;[tag[Race]]+[sort[]]&quot;&gt;&gt;</pre>
+<div created="20201204144543023" modified="20201225153640695" tags="" title="Race">
+<pre>&lt;$list filter=&quot;[tag[Race]]+[sort[]]&quot;&gt;
+&lt;$link&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;br/&gt;
+&lt;$transclude field=&quot;text&quot;/&gt;&lt;br/&gt;
+&lt;br/&gt;
+&lt;/$list&gt;</pre>
 </div>
 <div created="20201214144831855" modified="20201214144856582" tags="" title="Rally">
 <pre>The person who wishes to do this sacrifices there free action to inspire another person to stay and fight with them. They make an immediate fear check roll but use the leadership of the person trying to rally. If this is also failed then they flee the battlefield.</pre>
@@ -15052,13 +15090,15 @@ Or
 Starting Equipment: Sword, Common Clothes, Cloak, flint &amp; steel, water canteen, backpack, tent, bedroll, water canteen, 2-week trail rations. 6d10 silver, Rune Kit
 &quot;&quot;&quot;</pre>
 </div>
-<div created="20201205153144884" modified="20201205173925885" tags="Skill MagicSkill" title="Runic Magic">
-<pre>&quot;&quot;&quot;
-This Skill is used with Either [[Magic]] or [[Faith]]
-and is used for the following runes.
-&lt;&lt;list-links &quot;[tag[Rune]]+[sort[]]&quot;&gt;&gt;
-The Target number of these Runes is affected by the [[Material|Rune Material Affects]]
-&quot;&quot;&quot;</pre>
+<div created="20201225160130427" modified="20201225160218882" tags="" title="Runes">
+<pre>&lt;$list filter=&quot;[tag[Rune]]+[sort[]]&quot;&gt;
+&lt;$link&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;br/&gt;
+&lt;$transclude field=&quot;text&quot;/&gt;&lt;br/&gt;
+&lt;br/&gt;
+&lt;/$list&gt;</pre>
+</div>
+<div created="20201205153144884" modified="20201225160456950" tags="Skill MagicSkill" title="Runic Magic">
+<pre>This Skill is used with Either [[Magic]] or [[Faith]] and is used for these [[Runes]]. The Target number of these Runes is affected by the [[Materials]].</pre>
 </div>
 <div created="20201204174105557" modified="20201204174741933" tags="GrowingUp" title="Runner">
 <pre>&quot;&quot;&quot;
@@ -15269,8 +15309,10 @@ Level 5: At the cost of 3 additional power the next rune used with sketch gains 
 &quot;&quot;&quot;
 </pre>
 </div>
-<div created="20201204164740768" modified="20201205160545023" title="Skills">
-<pre>&lt;&lt;list-links &quot;[tag[Skill]]+[sort[]]&quot;&gt;&gt;</pre>
+<div created="20201204164740768" modified="20201225155649817" title="Skills">
+<pre>&lt;$list filter=&quot;[tag[Skill]]+[sort[]]&quot;&gt;
+&lt;$link&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt; - &lt;$transclude field=&quot;text&quot;/&gt;&lt;br/&gt;
+&lt;/$list&gt;</pre>
 </div>
 <div created="20201210150833202" modified="20201210150842929" tags="Perk" title="Slayer">
 <pre>&quot;&quot;&quot;
@@ -15477,6 +15519,15 @@ Cost : x20
 &quot;&quot;&quot;
 </pre>
 </div>
+<div created="20201225152337465" modified="20201225153334916" tags="" title="Starting Attributes">
+<pre>Starting [[Attributes]]: 16</pre>
+</div>
+<div created="20201225152936200" modified="20201225153316696" tags="" title="Starting Destiny">
+<pre>Starting [[Destiny]]: 1</pre>
+</div>
+<div created="20201225152608467" modified="20201225153308951" tags="" title="Starting Prestige">
+<pre>Starting [[Prestige]]: 10</pre>
+</div>
 <div created="20201205143919532" modified="20201205143927953" tags="Skill" title="Stealth">
 <pre>[[Agility]]</pre>
 </div>
@@ -15528,9 +15579,8 @@ Level 5: Offensive Spell damage no longer capped on power runes.
 <div created="20201205152336430" modified="20201205152336430" tags="Skill" title="Streetwise">
 <pre></pre>
 </div>
-<div created="20201204143850407" modified="20201204172412469" tags="Attribute" title="Strength">
-<pre>!!! Strength
-This attribute shows how strong you are.</pre>
+<div created="20201204143850407" modified="20201225151641019" tags="Attribute" title="Strength">
+<pre>This attribute shows how strong you are.</pre>
 </div>
 <div created="20201205173431766" modified="20201205173442357" tags="Rune" title="Striking Rune">
 <pre>&quot;&quot;&quot;
@@ -15709,9 +15759,12 @@ If in same melee as an ally you grant your ally +1 dice to their attack roll.
 &quot;&quot;&quot;
 </pre>
 </div>
-<div created="20201204150908943" modified="20201205160633487" title="Teenage Years">
-<pre>&quot;&quot;&quot;What education did you have growing up or did you have one at all.&quot;&quot;&quot;
-&lt;&lt;list-links &quot;[tag[GrowingUp]]+[sort[]]&quot;&gt;&gt;</pre>
+<div created="20201204150908943" modified="20201225153941601" title="Teenage Years">
+<pre>&lt;$list filter=&quot;[tag[GrowingUp]]+[sort[]]&quot;&gt;
+&lt;$link&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;br/&gt;
+&lt;$transclude field=&quot;text&quot;/&gt;&lt;br/&gt;
+&lt;br/&gt;
+&lt;/$list&gt;</pre>
 </div>
 <div created="20201205162807352" modified="20201205162837953" tags="OffensiveSpell Spell" title="Telekinesis">
 <pre>&quot;&quot;&quot;
@@ -16258,9 +16311,8 @@ Upkeep changes to Magic/Faith in rounds: 5
 Range increase x10 instead of x5 = 5
 &quot;&quot;&quot;</pre>
 </div>
-<div created="20201204144026702" modified="20201204173413753" tags="Attribute" title="Wisdom">
-<pre>!!! Wisdom
-This represents how wise you are to the world; it’s very much like common sense, and the less of this you have the more naive you are.</pre>
+<div created="20201204144026702" modified="20201225151704524" tags="Attribute" title="Wisdom">
+<pre>This represents how wise you are to the world; it’s very much like common sense, and the less of this you have the more naïve you are.</pre>
 </div>
 <div created="20201204144936894" modified="20201205143000656" tags="Race" title="Wood Elf">
 <pre>&quot;&quot;&quot;Renowned as common elves in Appia due to the high population of their kind, these elves can stand up to 6ft-7ft tall they are more toned in appearance than most humans and have pointed ears that usually give away their race. They can commonly live up to 300 years.
